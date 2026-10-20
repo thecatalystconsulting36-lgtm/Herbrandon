@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>HER Brandon · Portfolio admin</title>
+<style>
+body{margin:0;background:#fdf8f1;color:#4a3a52;font:16px/1.6 system-ui,sans-serif;padding:1.2rem}
+.w{max-width:760px;margin:0 auto}h1{font-family:Georgia,serif;color:#3b2644}
+input{font:inherit;padding:.7rem 1rem;border:1.5px solid #e8dcd8;border-radius:12px;width:100%;margin:.4rem 0 .8rem}
+button{font:600 .9rem system-ui;padding:.65rem 1.2rem;border-radius:999px;border:1.5px solid #7d5a9a;background:#5b3d78;color:#fff;cursor:pointer}
+button.o{background:#fff;color:#5b3d78}button.d{background:#fff;color:#a3243f;border-color:#a3243f}
+.row{display:flex;gap:.8rem;align-items:center;justify-content:space-between;background:#fff;border:1px solid #e8dcd8;border-radius:14px;padding:.8rem 1rem;margin:.6rem 0;flex-wrap:wrap}
+.row small{color:#6e5d77}.err{color:#a3243f}
+</style></head><body><div class="w">
+<h1>Portfolio pages</h1>
+<p>Enter your admin key (the <code>ADMIN_KEY</code> you set in Netlify). It is kept only in this browser tab.</p>
+<label for="k">Admin key</label><input id="k" type="password" autocomplete="off">
+<button id="go">Load pages</button> <span id="msg" class="err" role="alert"></span>
+<div id="list"></div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+async function call(method,body){
+  const r=await fetch("/api/admin",{method,headers:{Authorization:"Bearer "+$("#k").value,"Content-Type":"application/json"},body:body?JSON.stringify(body):undefined});
+  if(r.status===401)throw new Error("Wrong admin key.");
+  if(!r.ok)throw new Error("Something went wrong ("+r.status+").");
+  return r.json();
+}
+async function load(){
+  $("#msg").textContent="";const box=$("#list");box.textContent="";
+  try{
+    const d=await call("GET");
+    if(!d.pages.length){box.textContent="No published pages yet.";return}
+    d.pages.forEach(p=>{
+      const row=document.createElement("div");row.className="row";
+      const info=document.createElement("div");
+      const b=document.createElement("strong");b.textContent=p.name;
+      const s=document.createElement("small");s.textContent=" · "+p.title+" · /"+p.slug+" · updated "+new Date(p.updatedAt).toLocaleDateString();
+      info.append(b,document.createElement("br"),s);
+      const acts=document.createElement("div");
+      const a=document.createElement("button");a.className="o";a.textContent="Open";a.onclick=()=>window.open("/"+p.slug,"_blank","noopener");
+      const x=document.createElement("button");x.className="d";x.textContent="Remove";
+      x.onclick=async()=>{if(!confirm("Remove "+p.name+"’s page? This can’t be undone."))return;try{await call("POST",{slug:p.slug});load()}catch(e){$("#msg").textContent=e.message}};
+      acts.append(a," ",x);row.append(info,acts);box.append(row);
+    });
+  }catch(e){$("#msg").textContent=e.message}
+}
+$("#go").onclick=load;
+$("#k").addEventListener("keydown",e=>{if(e.key==="Enter")load()});
+</script></body></html>

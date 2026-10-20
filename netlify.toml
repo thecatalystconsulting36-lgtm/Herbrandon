@@ -1,0 +1,46 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/register"
+  to = "/.netlify/functions/register"
+  status = 200
+
+[[redirects]]
+  from = "/api/portfolio"
+  to = "/.netlify/functions/portfolio-api"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin"
+  to = "/.netlify/functions/admin-portfolios"
+  status = 200
+
+# herbrandon.com/ada-obi  → portfolio page. Real files (index.html, admin.html …) always win over this rule.
+[[redirects]]
+  from = "/:slug"
+  to = "/.netlify/functions/portfolio?slug=:slug"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self' about:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+
+[[headers]]
+  for = "/admin.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"

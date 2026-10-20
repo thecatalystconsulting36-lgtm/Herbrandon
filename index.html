@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HER Brandon — Opportunity. Friendship. Belonging.</title>
+<meta name="description" content="HER Brandon is a founder-led pilot community in Brandon, Manitoba helping women new in Brandon build friendships, professional connections and economic opportunities.">
+<meta property="og:title" content="HER Brandon — You don't have to build your new life alone">
+<meta property="og:description" content="Friendship, professional connections and belonging for women new in Brandon, Manitoba.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fdf8f1; --ivory:#fffdf9; --blush:#f8e6e8; --blush-2:#fbeff0; --rose:#c98a98; --rose-d:#a85d73;
+  --lilac:#efe8f5; --lilac-2:#f6f1fa; --purple:#7d5a9a; --purple-d:#5b3d78; --gold:#b8934a; --gold-l:#d9bd82;
+  --plum:#3b2644; --ink:#4a3a52; --muted:#6e5d77; --line:#e8dcd8; --card:#ffffff; --shadow:0 10px 30px rgba(91,61,120,.10);
+  --bg:var(--cream); --alt1:var(--blush-2); --alt2:var(--lilac-2); --btn-text:#fff;
+  --serif:var(--sans); --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --cream:#1d1522; --ivory:#241a2a; --blush:#3a2530; --blush-2:#2a1d29; --lilac:#2f2540; --lilac-2:#261d33;
+    --plum:#f6e9f0; --ink:#e6d9ea; --muted:#bfaecb; --line:#3d2f46; --card:#2c2133; --shadow:0 10px 30px rgba(0,0,0,.35);
+    --rose:#e0a3b2; --rose-d:#e7a9b9; --purple:#c9a8e6; --purple-d:#e3cdf5; --gold:#d9bd82; --gold-l:#e6d09f;
+    --bg:var(--cream); --alt1:var(--blush-2); --alt2:var(--lilac-2);
+  }
+}
+:root[data-theme="dark"]{
+  --cream:#1d1522; --ivory:#241a2a; --blush:#3a2530; --blush-2:#2a1d29; --lilac:#2f2540; --lilac-2:#261d33;
+  --plum:#f6e9f0; --ink:#e6d9ea; --muted:#bfaecb; --line:#3d2f46; --card:#2c2133; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --rose:#e0a3b2; --rose-d:#e7a9b9; --purple:#c9a8e6; --purple-d:#e3cdf5; --gold:#d9bd82; --gold-l:#e6d09f;
+  --bg:var(--cream); --alt1:var(--blush-2); --alt2:var(--lilac-2);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7}
+img,svg{max-width:100%}
+h1,h2,h3,h4{font-family:var(--sans);color:var(--plum);line-height:1.12;margin:0 0 .5em;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,8vw,4.6rem)} h2{font-size:clamp(2rem,5.5vw,3.2rem)} h3{font-size:1.7rem}
+p{margin:0 0 1em}
+a{color:var(--purple-d)}
+.skip{position:absolute;left:-999px;top:0;background:var(--plum);color:#fff;padding:.7rem 1rem;z-index:200;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(3.5rem,9vw,6.5rem) 0;position:relative}
+.alt1{background:var(--alt1)} .alt2{background:var(--alt2)}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-d);margin-bottom:1rem}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.center{text-align:center}.center .eyebrow{justify-content:center}
+.lead{font-size:1.15rem;color:var(--ink);max-width:62ch}
+.center .lead{margin-inline:auto}
+.rule{width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:1.4rem 0;border:0}
+.center .rule{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:600 .95rem var(--sans);padding:.95rem 1.7rem;border-radius:999px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;min-height:48px}
+.btn-primary{background:linear-gradient(135deg,#7d5a9a,#5b3d78);color:#fff;box-shadow:0 8px 20px rgba(91,61,120,.28);border-color:var(--gold)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(91,61,120,.34)}
+.btn-ghost{background:transparent;color:var(--purple-d);border-color:var(--purple)}
+.btn-ghost:hover{background:var(--lilac)}
+.btn-sm{padding:.65rem 1.2rem;min-height:42px;font-size:.85rem}
+.btn[disabled]{opacity:.6;cursor:not-allowed;transform:none}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--cream) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{width:min(1280px,100% - 2rem);display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+.logo{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-size:1.7rem;font-weight:700;color:var(--plum);text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.mark{width:44px;height:44px;flex:none}.mark-lg{width:64px;height:64px}
+.logo b{color:var(--rose-d);font-weight:700}.logo i{color:var(--gold);font-style:normal;font-size:.8em;margin-left:2px}
+.menu{display:none;gap:.95rem;align-items:center}
+.menu a{color:var(--ink);text-decoration:none;font-size:.85rem;font-weight:500;white-space:nowrap}
+.menu a:hover{color:var(--purple-d)}
+.burger{background:none;border:1px solid var(--line);border-radius:12px;width:46px;height:46px;display:grid;place-items:center;cursor:pointer;color:var(--plum)}
+.mobile{display:none;border-top:1px solid var(--line);padding:.8rem 1.25rem 1.2rem}
+.mobile.open{display:grid;gap:.2rem}
+.mobile a{padding:.8rem .2rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);font-weight:500}
+.mobile .btn{margin-top:.8rem;border-bottom:0;color:#fff}
+@media(min-width:1180px){.menu{display:flex}.burger,.mobile{display:none!important}}
+.nav .btn{display:none}
+@media(min-width:1180px){.nav .btn{display:inline-flex;white-space:nowrap}}
+
+/* HERO */
+.hero{padding-top:clamp(2.5rem,6vw,5rem);overflow:hidden;background:radial-gradient(900px 500px at 85% 0%,var(--lilac) 0,transparent 60%),radial-gradient(700px 500px at 0% 100%,var(--blush) 0,transparent 60%),var(--cream)}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:4rem}}
+.hero-welcome{font-style:italic;font-weight:600;color:var(--plum);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;max-width:21em}
+.hero-welcome span{display:block;font:inherit;font-style:italic;font-size:1.45em;color:inherit;margin-bottom:.15em}
+.hero .lead{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--plum);font-size:clamp(1.3rem,3.8vw,1.7rem);line-height:1.4}
+.hero .triad,.hero .eyebrow{font-family:var(--serif);font-style:italic;font-weight:600;text-transform:none;letter-spacing:0;color:var(--plum)}
+.hero .triad{font-size:clamp(1.15rem,3.4vw,1.4rem)}
+.hero .eyebrow{font-size:clamp(1.15rem,3.4vw,1.4rem)}
+.hero .triad span{color:var(--gold)}
+.hero h1 em{font-style:italic;color:var(--rose-d)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin:1.8rem 0 1.4rem}
+.triad{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.triad span{color:var(--gold);padding:0 .45rem}
+.collage{position:relative;aspect-ratio:1/1.05;max-width:520px;margin-inline:auto;width:100%}
+.photo{position:absolute;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;align-items:flex-end;padding:1rem;font-size:.78rem;color:var(--plum);font-weight:600}
+.photo svg{position:absolute;inset:0;width:100%;height:100%}
+.photo span{position:relative;background:color-mix(in srgb,var(--ivory) 88%,transparent);padding:.35rem .7rem;border-radius:999px;line-height:1.3}
+.p1{inset:0 22% 38% 0;background:linear-gradient(135deg,#f3d3d9,#e9cde8)}
+.p2{inset:14% 0 18% 48%;background:linear-gradient(160deg,#e4d7f1,#f6dfe2)}
+.p3{inset:62% 36% 0 8%;background:linear-gradient(120deg,#f8e8c9,#f3d3d9)}
+.gold-ring{position:absolute;width:110px;height:110px;border:1px solid var(--gold);border-radius:50%;right:-6px;bottom:6%;opacity:.7}
+
+
+/* ILLUSTRATED WOMEN */
+.scene{position:relative;aspect-ratio:1/1;max-width:540px;width:100%;margin-inline:auto}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);animation:spin 40s linear infinite}
+.blob.b1{inset:6% 8% 10% 4%;background:radial-gradient(circle at 30% 30%,#f8dfe4,#ead9f3);opacity:.9;border-radius:46% 54% 60% 40%/50% 42% 58% 50%}
+.blob.b2{inset:22% 0 0 24%;background:radial-gradient(circle at 70% 30%,#f3e6c8,#f8e6e8);opacity:.7;border-radius:58% 42% 40% 60%/46% 56% 44% 54%;animation-direction:reverse;animation-duration:55s}
+.av{position:absolute;border-radius:50%;overflow:hidden;border:2px solid #fff;box-shadow:var(--shadow);animation:floaty 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.av.arch{border-radius:999px 999px 22px 22px}
+.av svg{display:block;width:100%;height:100%}
+.av::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px var(--gold-l);pointer-events:none}
+.head{transform-box:view-box;transform-origin:100px 200px;animation:sway 5s ease-in-out infinite;animation-delay:var(--d,0s)}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 5.5s infinite;animation-delay:var(--d,0s)}
+.spark{position:absolute;color:var(--gold);animation:twinkle 3.5s ease-in-out infinite;font-size:1.2rem}
+.cup{position:absolute;width:15%;animation:floaty 5s ease-in-out infinite}
+.steam path{stroke:#b9a1c9;stroke-width:3;fill:none;stroke-linecap:round;opacity:0;animation:steam 3s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:.9s}.steam path:nth-child(3){animation-delay:1.8s}
+.strip{display:flex;justify-content:center;flex-wrap:wrap;gap:.9rem;margin-top:2.4rem}
+.strip .av{position:relative;width:76px;height:95px;border-color:rgba(236,217,166,.8)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes sway{0%,100%{transform:rotate(-1.8deg)}50%{transform:rotate(1.8deg)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes steam{0%{opacity:0;transform:translateY(8px)}40%{opacity:.8}100%{opacity:0;transform:translateY(-14px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.av,.head,.eye,.spark,.cup,.blob,.steam path{animation:none!important}.steam path{opacity:.6}}
+
+
+/* PORTFOLIO BUILDER */
+.pf-steps{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.4rem 0}
+.pf-steps span{background:var(--card);border:1px solid var(--gold-l);border-radius:999px;padding:.35rem .9rem;font-size:.85rem;font-weight:600;color:var(--plum)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#pf{width:min(720px,100vw);max-width:none;max-height:100dvh;margin:auto;overflow:auto}
+.pf-box{padding:1.4rem 1.4rem 1.6rem}
+.pf-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.6rem}
+.pf-head h3{margin:0;font-size:1.7rem}
+.pf-head .x{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--muted);min-width:44px;min-height:44px}
+.pf-photo{display:flex;gap:1rem;align-items:center;margin:1rem 0 1.2rem}
+.pf-ph{width:92px;height:92px;border-radius:50%;background:linear-gradient(135deg,var(--blush),var(--lilac));border:2px solid var(--gold-l);display:grid;place-items:center;font-size:2rem;color:var(--purple);overflow:hidden;flex:none;background-size:cover;background-position:center}
+#pfFile:focus-visible+*{outline:3px solid var(--purple)}
+.pf-pub{border:1.5px solid var(--gold-l);background:var(--lilac-2);border-radius:20px;padding:1rem 1.2rem;margin:1rem 0}
+.pf-pub h4{font-size:1.35rem;margin:0 0 .4rem}.pf-url{font-weight:600;color:var(--purple-d);word-break:break-all;margin:.2rem 0 .8rem}
+.pf-pub code{background:var(--card);padding:.15rem .5rem;border-radius:8px;word-break:break-all;font-size:.85rem}
+#pfFrame{width:100%;height:min(62vh,560px);border:1px solid var(--line);border-radius:18px;background:#fff}
+.pf-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+@media(max-width:700px){#pf{width:100vw;height:100dvh;max-height:100dvh;border-radius:0}.pf-box{padding-top:calc(1.2rem + env(safe-area-inset-top,0px));padding-bottom:calc(1.4rem + env(safe-area-inset-bottom,0px))}}
+
+/* PROBLEM */
+.questions{display:grid;gap:.8rem;margin:1.8rem 0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.q{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.1rem 1.3rem;font-family:var(--sans);font-size:1.3rem;color:var(--plum);box-shadow:var(--shadow)}
+.q::before{content:"“";color:var(--gold);font-size:2rem;line-height:0;vertical-align:-.35em;margin-right:.2rem}
+.callout{margin-top:2rem;padding:1.8rem 2rem;border-radius:26px;background:linear-gradient(135deg,var(--blush),var(--lilac));border:1px solid var(--gold-l);text-align:center;font-family:var(--sans);font-size:clamp(1.5rem,4vw,2.2rem);color:var(--plum);font-weight:600}
+
+/* PILLARS */
+.pillars{display:grid;gap:1.6rem}
+@media(min-width:900px){.pillars{grid-template-columns:1fr 1fr}}
+.pillar{background:var(--card);border-radius:30px;padding:clamp(1.6rem,4vw,2.6rem);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.pillar::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--rose),var(--purple))}
+.tag{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--purple)}
+.pillar h3{font-size:2.2rem;margin:.3rem 0 .2rem}
+.pillar .sub{font-family:var(--sans);font-style:italic;font-size:1.5rem;color:var(--rose-d);margin-bottom:1rem}
+.ticks{list-style:none;padding:0;margin:1rem 0 1.4rem;display:grid;gap:.5rem;grid-template-columns:1fr 1fr}
+@media(max-width:480px){.ticks{grid-template-columns:1fr}}
+.ticks li{display:flex;gap:.55rem;font-size:.95rem;line-height:1.45}
+.ticks li::before{content:"✦";color:var(--gold);font-size:.8rem;margin-top:.25rem}
+.note{font-size:.88rem;background:var(--lilac-2);border-left:3px solid var(--gold);padding:.8rem 1rem;border-radius:0 12px 12px 0;margin-bottom:1.4rem;color:var(--ink)}
+.hl{font-family:var(--sans);font-size:1.35rem;color:var(--plum);margin-bottom:1.4rem;line-height:1.3}
+.pillar .btn{margin-top:auto;align-self:flex-start}
+
+/* STEPS */
+.steps{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:2.5rem}
+.step{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:1.8rem 1.5rem;box-shadow:var(--shadow);position:relative}
+.step .n{font-family:var(--sans);font-size:3.2rem;color:var(--gold);line-height:1;font-weight:600;margin-bottom:.6rem;display:block}
+.step h3{font-size:1.45rem}.step p{font-size:.95rem;margin:0}
+
+/* CHIPS */
+.chips{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:center;margin:2rem 0}
+.chip{font:500 .95rem var(--sans);padding:.65rem 1.2rem;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .18s;min-height:44px}
+.chip:hover{border-color:var(--rose);transform:translateY(-1px)}
+.chip[aria-pressed="true"]{background:var(--purple-d);color:#fff;border-color:var(--gold)}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#1d1522}
+.big{font-family:var(--sans);font-size:clamp(2rem,6vw,3.6rem);color:var(--rose-d);font-style:italic;font-weight:600}
+
+/* CIRCLES */
+.circles{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:2.2rem}
+.circle{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.4rem;display:flex;gap:.9rem;align-items:center;box-shadow:var(--shadow);font-family:var(--sans);font-size:1.3rem;color:var(--plum);font-weight:600;line-height:1.2}
+.circle .e{font-size:1.7rem;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:var(--blush);flex:none}
+
+/* BELONGING */
+.belong{background:linear-gradient(160deg,#4a2f5e,#6d4a82 55%,#8a5b7c);color:#fff;text-align:center;overflow:hidden}
+.belong h2{color:#fff}.belong .eyebrow{color:#ecd9a6}.belong .eyebrow::before{background:#ecd9a6}
+.belong .lines p{font-family:var(--sans);font-size:clamp(1.3rem,3.6vw,1.9rem);margin:.4rem 0;color:#f6e9f0;font-style:italic}
+.belong .fin{font-family:var(--sans);font-size:clamp(2.6rem,8vw,5rem);color:#ecd9a6;margin-top:1.6rem;font-weight:600}
+.belong::after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(236,217,166,.35);border-radius:50%;right:-120px;top:-120px}
+
+/* VALUES */
+.values{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.5rem 0}
+.val{padding:.55rem 1.1rem;border-radius:999px;background:var(--card);border:1px solid var(--gold-l);font-weight:600;font-size:.9rem;color:var(--plum)}
+.val.no{border-color:var(--line);color:var(--muted);font-weight:500}.val.no::before{content:"✕ ";color:var(--rose-d)}
+
+/* TESTIMONIALS / FOUNDER */
+.empty-story{border:1.5px dashed var(--gold);border-radius:28px;padding:2.4rem 1.6rem;text-align:center;background:var(--card);max-width:760px;margin:1.5rem auto 0}
+.empty-story h3{font-size:2rem}
+.founder{display:grid;gap:2.2rem;align-items:center}
+@media(min-width:860px){.founder{grid-template-columns:.8fr 1.2fr;gap:4rem}}
+.fphoto{aspect-ratio:4/5;border-radius:200px 200px 28px 28px;background:linear-gradient(160deg,var(--blush),var(--lilac));border:1px solid var(--gold-l);display:grid;place-items:center;text-align:center;padding:1.5rem;color:var(--muted);font-size:.9rem;max-width:380px;width:100%;margin-inline:auto;box-shadow:var(--shadow)}
+.fphoto svg{width:70px;height:70px;margin:0 auto .6rem;display:block;opacity:.55}
+.quote{font-family:var(--sans);font-size:clamp(1.5rem,3.6vw,2.1rem);color:var(--plum);line-height:1.25;font-weight:600;margin-bottom:1rem}
+.sig{font-family:var(--sans);font-size:1.4rem;color:var(--purple-d);font-style:italic}
+
+/* FINAL CTA */
+.final{text-align:center;background:linear-gradient(135deg,var(--cream),var(--blush) 45%,var(--lilac));border-top:1px solid var(--gold-l);border-bottom:1px solid var(--gold-l)}
+.small-line{margin-top:1.2rem;font-family:var(--sans);font-style:italic;font-size:1.3rem;color:var(--purple-d)}
+
+/* FORM */
+.formcard{background:var(--card);border-radius:30px;box-shadow:var(--shadow);border:1px solid var(--line);padding:clamp(1.3rem,4vw,2.6rem);max-width:820px;margin:2rem auto 0}
+.progress{display:flex;gap:.5rem;margin-bottom:1.6rem}
+.progress li{flex:1;list-style:none;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--muted);border-top:3px solid var(--line);padding-top:.5rem}
+.progress li.on{color:var(--purple-d);border-color:var(--gold)}.progress li.done{border-color:var(--purple)}
+.progress{padding:0;margin:0 0 1.6rem}
+.fs{border:0;padding:0;margin:0;min-width:0}.fs legend{font-family:var(--serif);font-size:1.9rem;color:var(--plum);font-weight:600;padding:0;margin-bottom:.3rem}
+.grid2{display:grid;gap:1rem}@media(min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.field label,.gl{font-weight:600;font-size:.92rem;color:var(--plum)}
+.opt{font-weight:400;color:var(--muted);font-size:.82rem}
+input[type=text],input[type=email],input[type=tel],select,textarea{font:inherit;font-size:1rem;padding:.8rem 1rem;border-radius:14px;border:1.5px solid var(--line);background:var(--ivory);color:var(--ink);width:100%;min-height:48px}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid color-mix(in srgb,var(--purple) 45%,transparent);border-color:var(--purple)}
+.err{color:#a3243f;font-size:.84rem;font-weight:500;min-height:0}
+:root[data-theme="dark"] .err{color:#ff9bb0}
+.field.bad input,.field.bad select,.field.bad textarea{border-color:#a3243f}
+.checks{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:.4rem 0 1.2rem}
+.ck{display:flex;gap:.7rem;align-items:flex-start;padding:.7rem .9rem;border:1.5px solid var(--line);border-radius:14px;background:var(--ivory);cursor:pointer;font-size:.95rem;line-height:1.4}
+.ck:has(input:checked){border-color:var(--purple);background:var(--lilac-2)}
+.ck input{width:20px;height:20px;margin:.1rem 0 0;accent-color:var(--purple-d);flex:none}
+.consent{display:grid;gap:.7rem;margin:1rem 0}
+.consent .ck{font-size:.9rem}.consent .help{display:block;color:var(--muted);font-size:.82rem;margin-top:.25rem}
+.req{color:var(--rose-d)}
+.nav-btns{display:flex;justify-content:space-between;gap:1rem;margin-top:1.6rem;flex-wrap:wrap}
+.banner{background:#fff6dd;color:#5b4410;border:1px solid var(--gold-l);border-radius:14px;padding:.8rem 1rem;font-size:.85rem;margin-bottom:1.2rem}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.success{text-align:center;padding:2rem 0}.success .seal{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--blush),var(--lilac));border:1px solid var(--gold);display:grid;place-items:center;margin:0 auto 1.2rem;font-size:2.2rem;color:var(--purple-d)}
+.fine{font-size:.88rem;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.88rem;margin-top:.6rem}
+
+/* CONTACT / FOOTER */
+.contact{display:grid;gap:1rem;max-width:640px;margin:1.5rem auto 0;text-align:center}
+footer{background:var(--plum);color:#eadff0;padding:3.5rem 0 2rem;font-size:.92rem}
+:root[data-theme="dark"] footer,:root:not([data-theme="light"]) footer{background:var(--plum)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#150f19;color:#d9cbe0}}
+footer .logo{color:#fff}footer a{color:#f3e3a8;text-decoration:none}footer a:hover{text-decoration:underline}
+.fgrid{display:grid;gap:2rem}@media(min-width:800px){.fgrid{grid-template-columns:1.2fr 1fr 1fr}}
+.fnav{display:grid;gap:.5rem;align-content:start}
+.disc{border-top:1px solid rgba(255,255,255,.18);margin-top:2rem;padding-top:1.4rem;font-size:.82rem;color:#cdbad6}
+.tri{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#f3e3a8;margin:.4rem 0 1rem}
+
+/* MODAL */
+dialog{border:0;border-radius:26px;max-width:min(620px,92vw);padding:0;background:var(--ivory);color:var(--ink);box-shadow:0 30px 80px rgba(30,10,40,.45)}
+dialog::backdrop{background:rgba(40,20,50,.55)}
+.mod{padding:2rem 1.7rem 1.7rem;max-height:88dvh;overflow:auto}.mod h4{font-size:1.25rem;margin:1.2rem 0 .3rem}.mod h3{font-size:2rem}
+.mod .x{float:right;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--muted);min-width:44px;min-height:44px}
+
+/* ADMIN */
+#admin{display:none;background:var(--cream);min-height:100vh;padding:2rem 0 4rem}
+body.admin-mode #site{display:none}body.admin-mode #admin{display:block}
+.kpis{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:1.2rem 0 2rem}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.1rem 1.2rem}
+.kpi b{display:block;font-family:var(--sans);font-size:2.4rem;color:var(--purple-d);line-height:1}
+.kpi span{font-size:.82rem;color:var(--muted)}
+.panels{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.3rem 1.4rem;margin-bottom:1.2rem}
+.panel h3{font-size:1.4rem}
+.bar{display:grid;grid-template-columns:130px 1fr 28px;gap:.6rem;align-items:center;font-size:.85rem;margin:.35rem 0}
+.bar i{display:block;height:9px;border-radius:9px;background:linear-gradient(90deg,var(--rose),var(--purple))}
+.bar div{background:var(--lilac-2);border-radius:9px}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{text-align:left;padding:.55rem .4rem;border-bottom:1px solid var(--line);vertical-align:top}
+.pipe{display:flex;flex-wrap:wrap;gap:.3rem;font-size:.75rem;font-weight:600;color:var(--muted);margin:.4rem 0 1rem}
+.pipe span{background:var(--lilac);padding:.25rem .6rem;border-radius:999px}
+.flag{display:inline-block;font-size:.72rem;padding:.1rem .5rem;border-radius:999px;background:var(--blush);color:var(--plum);margin:0 .2rem .2rem 0}
+.flag.ok{background:#e1f1e4;color:#1f5a2c}
+.admin-note{background:#fff6dd;color:#5b4410;border:1px solid var(--gold-l);border-radius:14px;padding:.9rem 1.1rem;font-size:.88rem;margin:1rem 0}
+select.sm{min-height:36px;padding:.3rem .6rem;font-size:.82rem;border-radius:10px;width:auto}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn{transition:none}}
+
+/* ================= GLASS THEME ================= */
+:root{--glass:rgba(255,255,255,.5);--glass-2:rgba(255,255,255,.7);--glass-line:rgba(255,255,255,.8);--glass-shadow:0 12px 36px rgba(91,61,120,.12),inset 0 1px 0 rgba(255,255,255,.85);--blur:blur(16px) saturate(140%);--field:rgba(255,255,255,.75)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--glass:rgba(48,36,58,.5);--glass-2:rgba(48,36,58,.7);--glass-line:rgba(255,255,255,.14);--glass-shadow:0 12px 36px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.08);--field:rgba(36,26,42,.7)}}
+:root[data-theme="dark"]{--glass:rgba(48,36,58,.5);--glass-2:rgba(48,36,58,.7);--glass-line:rgba(255,255,255,.14);--glass-shadow:0 12px 36px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.08);--field:rgba(36,26,42,.7)}
+html{background:var(--cream)}
+body{background:transparent}
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.orb{position:absolute;display:block;border-radius:50%;filter:blur(70px);opacity:.6;animation:drift 26s ease-in-out infinite alternate}
+.o1{width:460px;height:460px;left:-140px;top:-80px;background:#f3c9d3}
+.o2{width:520px;height:520px;right:-200px;top:30%;background:#d9c8ee;animation-delay:-8s}
+.o3{width:420px;height:420px;left:20%;bottom:-160px;background:#f1e0b8;animation-delay:-15s;opacity:.5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .orb{opacity:.28}}
+:root[data-theme="dark"] .orb{opacity:.28}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(60px,40px,0) scale(1.12)}}
+.hero{background:transparent}
+.alt1{background:color-mix(in srgb,var(--blush) 34%,transparent)}
+.alt2{background:color-mix(in srgb,var(--lilac) 40%,transparent)}
+.final{background:linear-gradient(135deg,color-mix(in srgb,var(--blush) 55%,transparent),color-mix(in srgb,var(--lilac) 55%,transparent))}
+.q,.pillar,.step,.circle,.formcard,.empty-story,.pf-pub,.pf-steps span,.val,.gc,.gpill,.fphoto{background:var(--glass);border:1px solid var(--glass-line);box-shadow:var(--glass-shadow);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
+.callout{background:linear-gradient(135deg,rgba(248,230,232,.55),rgba(239,232,245,.55));border:1px solid var(--gold-l);box-shadow:var(--glass-shadow);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
+.chip{background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.chip[aria-pressed="true"]{background:var(--purple-d);border-color:var(--gold)}
+.ck{background:var(--glass-2);border-color:var(--glass-line)}
+input[type=text],input[type=email],input[type=tel],select,textarea{background:var(--field);border-color:var(--glass-line);box-shadow:inset 0 1px 2px rgba(91,61,120,.06)}
+header.nav{background:color-mix(in srgb,var(--cream) 55%,transparent);-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--glass-line)}
+.mobile{background:var(--glass-2);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+dialog{background:color-mix(in srgb,var(--ivory) 88%,transparent);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--glass-line)}
+dialog::backdrop{background:rgba(40,20,50,.45);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.step,.circle,.gc,.q{transition:transform .25s ease,box-shadow .25s ease}
+.step:hover,.circle:hover,.gc:hover,.q:hover{transform:translateY(-4px)}
+.btn-primary{background:linear-gradient(135deg,#8a67a8,#5b3d78);box-shadow:0 10px 24px rgba(91,61,120,.3),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-ghost{background:var(--glass);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:var(--glass-line);box-shadow:inset 0 0 0 1.5px var(--purple)}
+.why{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:2.2rem}
+.gc{padding:1.6rem 1.5rem;border-radius:26px}
+.gc .ico{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:.9rem;background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(248,230,232,.75));border:1px solid var(--glass-line);box-shadow:0 6px 16px rgba(201,138,152,.25)}
+.gc h3{font-size:1.5rem;margin-bottom:.3rem}.gc p{font-size:.95rem;margin:0}
+.gpill{position:absolute;bottom:-2.6rem;padding:.5rem .8rem;border-radius:999px;font-size:.8rem;font-weight:600;color:var(--plum);white-space:nowrap;animation:floaty 6s ease-in-out infinite}
+.scene{margin-bottom:3rem}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .q,.pillar,.step,.circle,.formcard,.empty-story,.pf-pub,.pf-steps span,.val,.gc,.gpill,.fphoto,.chip{background:rgba(255,255,255,.92)}
+  dialog,header.nav,.mobile{background:var(--ivory)}
+}
+@media (prefers-reduced-motion:reduce){.orb,.gpill{animation:none!important}.step:hover,.circle:hover,.gc:hover,.q:hover{transform:none}}
+
+.bd-pic{margin:0 0 1.2rem;border-radius:28px;overflow:hidden;position:relative;border:1px solid var(--glass-line);box-shadow:var(--glass-shadow);aspect-ratio:16/9;max-width:560px}
+.bd-pic svg{display:block;width:100%;height:100%}
+.bd-pic figcaption{position:absolute;left:1rem;bottom:1rem;padding:.4rem .9rem;border-radius:999px;background:var(--glass-2);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--glass-line);color:var(--plum);font-weight:600;font-size:.85rem}
+/* Typography rule: serif for headings and the logo only; everything else uses the body font */
+h1,h2,h3,h4,.logo,.fs legend,.pillar .sub{font-family:var(--serif)}
+</style>
+</head>
+<body>
+<div class="orbs" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="site">
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="HER Brandon — home"><svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="#fdf8f1" stroke="#b8934a" stroke-width="1.6"/><circle cx="60" cy="60" r="51" fill="none" stroke="#d9bd82" stroke-width=".7"/><path d="M46.0 55.0C47.0 42.0 54.0 40.0 60.0 40.0C66.0 40.0 73.0 42.0 74.0 55.0Z" fill="#7d5a9a"/><path d="M70.7 73.0C71.7 60.0 78.7 58.0 84.7 58.0C90.7 58.0 97.7 60.0 98.7 73.0Z" fill="#5b3d78"/><path d="M61.3 102.0C62.3 89.0 69.3 87.0 75.3 87.0C81.3 87.0 88.3 89.0 89.3 102.0Z" fill="#a85d73"/><path d="M30.7 102.0C31.7 89.0 38.7 87.0 44.7 87.0C50.7 87.0 57.7 89.0 58.7 102.0Z" fill="#c98a98"/><path d="M21.3 73.0C22.3 60.0 29.3 58.0 35.3 58.0C41.3 58.0 48.3 60.0 49.3 73.0Z" fill="#7d5a9a"/><circle cx="60.0" cy="32.0" r="16.5" fill="#1d1416"/><ellipse cx="60.0" cy="34.0" rx="12.5" ry="14" fill="#5c3a21"/><path d="M48.5 31.0C48.0 17.0 72.0 17.0 71.5 31.0C66.0 25.0 54.0 25.0 48.5 31.0Z" fill="#1d1416"/><circle cx="56.0" cy="35.0" r="1.1" fill="#2b1a22"/><circle cx="64.0" cy="35.0" r="1.1" fill="#2b1a22"/><path d="M56.5 40.0Q60.0 43.0 63.5 40.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M70.7 56.0C68.7 34.0 100.7 34.0 98.7 56.0C99.7 66.0 92.7 69.0 84.7 69.0C76.7 69.0 69.7 66.0 70.7 56.0Z" fill="#c98a98"/><ellipse cx="84.7" cy="52.0" rx="11" ry="12.5" fill="#c68642"/><path d="M74.7 47.0C78.7 41.0 90.7 41.0 94.7 47.0C89.7 44.0 79.7 44.0 74.7 47.0Z" fill="#c98a98"/><circle cx="80.7" cy="53.0" r="1.1" fill="#2b1a22"/><circle cx="88.7" cy="53.0" r="1.1" fill="#2b1a22"/><path d="M81.2 58.0Q84.7 61.0 88.2 58.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><ellipse cx="75.3" cy="81.0" rx="12.5" ry="14" fill="#8d5524"/><path d="M62.8 79.0C61.3 64.0 89.3 64.0 87.8 79.0C82.3 74.0 68.3 74.0 62.8 79.0Z" fill="#d9a441"/><path d="M63.3 73.0Q75.3 67.0 87.3 73.0" stroke="#fff" stroke-opacity=".7" stroke-width="1.4" fill="none"/><circle cx="71.3" cy="82.0" r="1.1" fill="#2b1a22"/><circle cx="79.3" cy="82.0" r="1.1" fill="#2b1a22"/><path d="M71.8 87.0Q75.3 90.0 78.8 87.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="44.7" cy="67.0" r="5.5" fill="#2b1a22"/><ellipse cx="44.7" cy="81.0" rx="12.5" ry="14" fill="#f2d1b3"/><path d="M33.2 78.0C32.7 64.0 56.7 64.0 56.2 78.0C50.7 72.0 38.7 72.0 33.2 78.0Z" fill="#2b1a22"/><circle cx="40.7" cy="82.0" r="1.1" fill="#2b1a22"/><circle cx="48.7" cy="82.0" r="1.1" fill="#2b1a22"/><path d="M41.2 87.0Q44.7 90.0 48.2 87.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M23.3 49.0C17.3 64.0 23.3 72.0 27.3 73.0L43.3 73.0C47.3 72.0 53.3 64.0 47.3 49.0Z" fill="#3a2418"/><ellipse cx="35.3" cy="52.0" rx="12.5" ry="14" fill="#a56b46"/><path d="M23.8 49.0C23.3 35.0 47.3 35.0 46.8 49.0C41.3 43.0 29.3 43.0 23.8 49.0Z" fill="#3a2418"/><circle cx="31.3" cy="53.0" r="1.1" fill="#2b1a22"/><circle cx="39.3" cy="53.0" r="1.1" fill="#2b1a22"/><path d="M31.8 58.0Q35.3 61.0 38.8 58.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M60 67c-8-5-10-9-6.5-12 2.4-2 5 0 6.5 2.2 1.5-2.2 4.1-4.2 6.5-2.2 3.5 3 1.5 7-6.5 12z" fill="#b8934a"/></svg><span><b>HER</b> Brandon</span></a>
+    <nav class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#why">Why HER Brandon</a><a href="#opportunity">HER Opportunity</a><a href="#community">HER Community</a><a href="#how">How It Works</a><a href="#join">Join HER Brandon</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#join">JOIN HER BRANDON</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <nav class="mobile" id="mobile" aria-label="Mobile">
+    <a href="#home">Home</a><a href="#why">Why HER Brandon</a><a href="#opportunity">HER Opportunity</a><a href="#community">HER Community</a><a href="#how">How It Works</a><a href="#join">Join HER Brandon</a><a href="#contact">Contact</a>
+    <a class="btn btn-primary" href="#join">JOIN HER BRANDON</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Opportunity · Friendship · Belonging</div>
+      <figure class="bd-pic" role="img" aria-label="Illustration of Brandon, Manitoba: prairie sky over the Assiniboine River, grain elevators and the city skyline">
+<svg viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9c8ee"/><stop offset=".55" stop-color="#f8dfe4"/><stop offset="1" stop-color="#f6e6c4"/></linearGradient>
+<linearGradient id="bfield" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d49a"/><stop offset="1" stop-color="#d4b46a"/></linearGradient>
+<linearGradient id="bwater" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b9a1d6"/><stop offset="1" stop-color="#e3b9c6"/></linearGradient></defs>
+<rect width="600" height="340" fill="url(#bsky)"/>
+<circle cx="440" cy="150" r="46" fill="#fff4d6" opacity=".9"/><circle cx="440" cy="150" r="30" fill="#f3d58f"/>
+<g fill="#fff" opacity=".75"><ellipse cx="110" cy="60" rx="50" ry="13"/><ellipse cx="150" cy="52" rx="34" ry="11"/><ellipse cx="380" cy="42" rx="56" ry="13"/><ellipse cx="430" cy="52" rx="32" ry="10"/></g>
+<path d="M0 205 Q150 190 300 202 T600 198 V250 H0Z" fill="#cdb7e0" opacity=".7"/>
+<g fill="#6d4a82">
+<rect x="70" y="150" width="20" height="62"/><rect x="92" y="140" width="20" height="72"/><rect x="114" y="150" width="20" height="62"/>
+<path d="M70 150 l10 -10 l10 10Z M92 140 l10 -10 l10 10Z M114 150 l10 -10 l10 10Z"/><rect x="64" y="190" width="76" height="22"/>
+<rect x="170" y="172" width="26" height="40"/><rect x="200" y="160" width="14" height="52"/><rect x="218" y="178" width="30" height="34"/>
+<rect x="268" y="132" width="26" height="80"/><rect x="298" y="150" width="22" height="62"/><rect x="324" y="166" width="28" height="46"/><rect x="262" y="124" width="38" height="8"/>
+<path d="M281 96 l9 28 h-18Z"/><rect x="280" y="86" width="2" height="12"/>
+<rect x="372" y="170" width="30" height="42"/><rect x="406" y="156" width="18" height="56"/><rect x="480" y="168" width="40" height="44"/><rect x="526" y="178" width="30" height="34"/>
+</g>
+<g fill="#f6e6c4" opacity=".9"><rect x="274" y="140" width="4" height="5"/><rect x="284" y="140" width="4" height="5"/><rect x="274" y="152" width="4" height="5"/><rect x="284" y="152" width="4" height="5"/><rect x="302" y="160" width="4" height="5"/><rect x="310" y="160" width="4" height="5"/><circle cx="281" cy="108" r="4"/></g>
+<rect y="212" width="600" height="38" fill="url(#bwater)"/>
+<path d="M0 224 Q60 219 120 224 T240 224 T360 224 T480 224 T600 224" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/>
+<path d="M0 236 Q80 231 160 236 T320 236 T480 236 T600 236" stroke="#fff" stroke-opacity=".4" stroke-width="2" fill="none"/>
+<g stroke="#5b3d78" stroke-width="3" fill="none"><path d="M120 212 Q300 168 480 212"/><path d="M120 212 H480"/></g><g stroke="#5b3d78" stroke-width="1.6"><path d="M170 198V212M220 188V212M270 183V212M320 183V212M370 188V212M420 198V212"/></g>
+<path d="M0 250 Q150 238 300 248 T600 244 V340 H0Z" fill="url(#bfield)"/>
+<g stroke="#b8934a" stroke-width="2" opacity=".5" fill="none"><path d="M-20 340 L130 262"/><path d="M60 340 L190 258"/><path d="M180 340 L270 256"/><path d="M320 340 L350 254"/><path d="M450 340 L440 256"/><path d="M570 340 L520 258"/></g>
+</svg><figcaption>Brandon, Manitoba</figcaption></figure>
+      <p class="lead">HER Brandon helps women new in Brandon build meaningful friendships, professional connections and economic opportunities.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#join">Join HER Brandon</a>
+        <a class="btn btn-ghost" href="#community">Discover Our Community</a>
+      </div>
+      <p class="triad">Economic Inclusion<span>•</span>Social Connection<span>•</span>Belonging</p>
+    </div>
+    <div class="scene" id="heroScene" role="img" aria-label="Illustration of six women of different backgrounds smiling together, "></div>
+  </div>
+</section>
+
+<!-- PROBLEM / WHY -->
+<section id="why" class="alt1">
+  <div class="wrap rv">
+    <div class="eyebrow">Why HER Brandon</div>
+    <h2>Settled doesn’t always mean connected.</h2>
+    <div class="lead">
+      <p>Moving to a new country can mean leaving behind much more than a home.</p>
+      <p>Women may leave behind friends, colleagues, professional networks, extended family, familiar communities and years of relationships.</p>
+      <p>A woman can have a home, documentation and the essentials of settlement — and still feel economically disconnected or socially alone.</p>
+    </div>
+    <p style="margin-top:1.6rem;font-weight:600;color:var(--plum)">She may be asking:</p>
+    <div class="questions">
+      <div class="q">Where do I meet women like me?</div>
+      <div class="q">How do I rebuild my professional network?</div>
+      <div class="q">Who can I call for coffee?</div>
+      <div class="q">How do people find opportunities here?</div>
+      <div class="q">How do I turn what I know into something valuable in Canada?</div>
+      <div class="q">Where do I belong?</div>
+    </div>
+    <div class="callout">HER Brandon exists for the space between arriving and truly belonging.</div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="wrap">
+    <div class="center rv"><div class="eyebrow">Two ways we help</div><h2>Opportunity and friendship, together.</h2><hr class="rule"></div>
+    <div class="pillars">
+      <article class="pillar rv" id="opportunity">
+        <div class="tag">Economic Inclusion</div>
+        <h3>HER Opportunity</h3>
+        <div class="sub">People should know what you can do.</div>
+        <p>Women who are new in Brandon often arrive with education, professional experience, entrepreneurial ability and practical skills that may not immediately be visible in their new community.</p>
+        <p style="margin-bottom:0"><strong>HER Opportunity helps women build:</strong></p>
+        <ul class="ticks">
+          <li>Professional connections</li><li>Mentorship relationships</li><li>Business introductions</li><li>Employment connections</li><li>Customer referrals</li><li>Canadian professional networks</li><li>Skills visibility</li><li>Project opportunities</li><li>Entrepreneurship connections</li><li>Pathways toward Canadian experience</li>
+        </ul>
+        <p class="note"><strong>HER Brandon does not guarantee employment, customers or income.</strong> We create connections, visibility and pathways to opportunity.</p>
+        <a class="btn btn-primary" href="#join" data-jump="skills">Tell Us What You Can Do</a>
+      </article>
+      <article class="pillar rv" id="community">
+        <div class="tag">Social Inclusion</div>
+        <h3>HER Community</h3>
+        <div class="sub">Everyone needs people.</div>
+        <p>HER Community exists to help women develop genuine relationships rather than simply attend events.</p>
+        <ul class="ticks">
+          <li>Coffee friendships</li><li>HER Circles</li><li>Walking partners</li><li>Professional friendships</li><li>Women 40+</li><li>Mothers</li><li>Entrepreneurs</li><li>Women new to Brandon</li><li>Faith and values-based interests</li><li>Food and culture</li><li>Books and music</li><li>Fitness and wellness</li><li>Volunteering</li><li>Community activities</li>
+        </ul>
+        <p class="hl">Our goal isn’t simply to fill a room with women. Our goal is for women to leave with someone they would genuinely like to see again.</p>
+        <a class="btn btn-primary" href="#circles">Find Your Circle</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHAT YOU'LL FIND -->
+<section id="find">
+  <div class="wrap">
+    <div class="center rv"><div class="eyebrow">Inside HER Brandon</div><h2>What you’ll find here.</h2><hr class="rule">
+    <p class="lead">A small, friendly community built around real people, not a directory and not a program to sign up for.</p></div>
+    <div class="why rv">
+      <div class="gc"><div class="ico" aria-hidden="true">☕</div><h3>Real friendships</h3><p>Meet women who want someone to call, and walk, talk and laugh with.</p></div>
+      <div class="gc"><div class="ico" aria-hidden="true">🤝</div><h3>Professional connections</h3><p>Meet mentors, collaborators and women who know your industry.</p></div>
+      <div class="gc"><div class="ico" aria-hidden="true">🌟</div><h3>Be seen</h3><p>Create your own portfolio page in minutes and show people what you can do.</p></div>
+      <div class="gc"><div class="ico" aria-hidden="true">🫶</div><h3>HER Circles</h3><p>Small groups around coffee, books, faith, family, business and more.</p></div>
+      <div class="gc"><div class="ico" aria-hidden="true">🔒</div><h3>You choose what’s shared</h3><p>Separate, unticked choices. Nothing is shared without your permission.</p></div>
+      <div class="gc"><div class="ico" aria-hidden="true">🌍</div><h3>Every background welcome</h3><p>Women from every country, culture, faith and profession belong here.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="alt2">
+  <div class="wrap">
+    <div class="center rv"><div class="eyebrow">How It Works</div><h2>Four simple steps.</h2><hr class="rule"></div>
+    <div class="steps rv">
+      <div class="step"><span class="n">01</span><h3>Tell Us About You</h3><p>Register and tell us what you can do, what you need and what you enjoy.</p></div>
+      <div class="step"><span class="n">02</span><h3>Discover Your People</h3><p>We identify women, circles, mentors and community opportunities that may fit your interests.</p></div>
+      <div class="step"><span class="n">03</span><h3>Discover Opportunities</h3><p>Where appropriate, we help connect you to professional contacts, mentors, businesses, opportunities and existing community resources.</p></div>
+      <div class="step"><span class="n">04</span><h3>Build Your Brandon</h3><p>Develop friendships, professional relationships and a community around you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT CAN YOU DO -->
+<section id="skills">
+  <div class="wrap center rv">
+    <div class="eyebrow">What can you do?</div>
+    <h2>We don’t only want to know what you need.</h2>
+    <p class="big">We want to know what you can do.</p>
+    <p class="fine">Tap anything that’s true for you — your choices carry into the registration form.</p>
+    <div class="chips" id="skillChips" role="group" aria-label="Skills and experience"></div>
+    <p class="lead"><strong>Your skills, experience, ideas and interests matter.</strong></p>
+    <a class="btn btn-primary" href="#join">Add My Skills</a> <button type="button" class="btn btn-ghost" data-pf-open>Create My Portfolio Page</button>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO BUILDER -->
+<section id="portfolio" class="alt2">
+  <div class="wrap center rv">
+    <div class="eyebrow">Be seen</div>
+    <h2>Create your own portfolio page.</h2>
+    <p class="lead">Answer four quick questions, add your photo, and get a beautiful one-page portfolio with a clear “contact me” button. It takes about three minutes and it’s free.</p>
+    <div class="pf-steps" aria-hidden="true"><span>1 · You</span><span>2 · Your skills</span><span>3 · Your story</span><span>4 · Contact</span></div>
+    <p><button type="button" class="btn btn-primary" data-pf-open>✦ Create My Portfolio Page</button></p>
+    <p class="fine">Your photo and answers stay on your device. Nothing is sent to HER Brandon unless you choose to publish your page.</p>
+  </div>
+</section>
+
+<!-- CIRCLES -->
+<section id="circles" class="alt1">
+  <div class="wrap">
+    <div class="center rv"><div class="eyebrow">HER Circles</div><h2>Find Your People.</h2><hr class="rule">
+    <p class="lead">Small HER Circles help women meet around shared interests and experiences — so it feels less like attending an event and more like finding your table.</p></div>
+    <div class="circles rv" id="circleCards"></div>
+    <div class="center" style="margin-top:2rem"><a class="btn btn-primary" href="#join">Choose My Circles</a></div>
+  </div>
+</section>
+
+<!-- BELONGING -->
+<section class="belong" id="belonging">
+  <div class="wrap rv">
+    <div class="eyebrow">Belonging</div>
+    <h2>Imagine having someone to call.</h2>
+    <div class="lines">
+      <p>Someone to meet for coffee.</p>
+      <p>Someone who understands what it feels like to start again.</p>
+      <p>Someone who knows your industry.</p>
+      <p>Someone who tells you about an opportunity.</p>
+      <p>Someone who introduces you to someone else.</p>
+      <p>Someone who celebrates your first win.</p>
+      <p>Someone who simply asks: “Are you free this weekend?”</p>
+    </div>
+    <div class="fin">That’s belonging.</div>
+    <div class="strip" id="strip" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="values">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Safety &amp; Community Values</div>
+      <h2>A Community Built on Respect</h2>
+      <p class="lead">HER Brandon welcomes women from different countries, cultures, backgrounds, professions, faiths and life experiences.</p>
+      <div class="values">
+        <span class="val">Respect</span><span class="val">Kindness</span><span class="val">Confidentiality</span><span class="val">Dignity</span><span class="val">Inclusion</span>
+        <span class="val no">No discrimination</span><span class="val no">No harassment</span><span class="val no">No unsolicited selling or spam</span>
+      </div>
+      <p class="fine">HER Brandon reserves the right to remove participants whose behaviour compromises the safety or dignity of other members.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="alt2" id="stories">
+  <div class="wrap center rv">
+    <div class="eyebrow">Stories</div>
+    <h2>Stories from HER Brandon</h2>
+    <div class="empty-story">
+      <p style="font-size:1.4rem;color:var(--plum);margin:0">Our first HER Brandon pilot is beginning soon. Real participant stories will appear here with permission.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="about">
+  <div class="wrap founder rv">
+    <div class="fphoto" role="img" aria-label="Placeholder for founder photograph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Founder photograph<br>placeholder</div></div>
+    <div>
+      <div class="eyebrow">About</div>
+      <h2>Why HER Brandon Was Created</h2>
+      <p class="quote">HER Brandon began with a simple realization: you can arrive somewhere successfully and still feel alone.</p>
+      <p>Starting again can mean rebuilding both your economic life and your social world.</p>
+      <p>HER Brandon was created to help women new in Brandon make those two journeys together — finding people, finding opportunities and building a community around themselves.</p>
+      <p class="sig">Founder: Chioma Nwahiri</p>
+      <button class="btn btn-ghost" data-modal="founder">A Note From Our Founder</button>
+      <p class="fine" style="margin-top:1.4rem">HER Brandon is currently a founder-led pilot community initiative in Brandon, Manitoba. It is not a government agency, immigration service, employment agency or registered charity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section id="join" class="alt1">
+  <div class="wrap">
+    <div class="center rv"><div class="eyebrow">Join HER Brandon</div><h2>Come as you are.</h2>
+    <p class="lead">It takes a few minutes. Share only what you’re comfortable sharing — you stay in control of who sees what.</p></div>
+    <div class="formcard" id="formCard">
+            <ol class="progress" id="progress" aria-label="Registration progress">
+        <li>About you</li><li>Looking for</li><li>What you can do</li><li>Your people</li>
+      </ol>
+      <form id="reg" novalidate autocomplete="on">
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <fieldset class="fs" data-step="0">
+          <legend>About you</legend>
+          <p class="fine">Fields marked <span class="req">*</span> are required. Please don’t share ID, immigration, banking or health numbers.</p>
+          <div class="grid2">
+            <div class="field"><label for="first">First name <span class="req">*</span></label><input type="text" id="first" name="first" autocomplete="given-name" required maxlength="60"><span class="err" id="e-first"></span></div>
+            <div class="field"><label for="last">Last name <span class="req">*</span></label><input type="text" id="last" name="last" autocomplete="family-name" required maxlength="60"><span class="err" id="e-last"></span></div>
+            <div class="field"><label for="pref">Preferred name <span class="opt">(optional)</span></label><input type="text" id="pref" name="pref" maxlength="60"></div>
+            <div class="field"><label for="email">Email address <span class="req">*</span></label><input type="email" id="email" name="email" autocomplete="email" required maxlength="120"><span class="err" id="e-email"></span></div>
+            <div class="field"><label for="phone">Phone number <span class="opt">(optional)</span></label><input type="tel" id="phone" name="phone" autocomplete="tel" maxlength="30"></div>
+            <div class="field"><label for="age">Age range</label><select id="age" name="age"><option value="">Select…</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45–54</option><option>55–64</option><option>65+</option><option>Prefer not to say</option></select></div>
+            <div class="field"><label for="tenure">How long have you lived in Brandon?</label><select id="tenure" name="tenure"><option value="">Select…</option><option>Less than 3 months</option><option>3–6 months</option><option>6–12 months</option><option>1–2 years</option><option>More than 2 years</option><option>I am planning to move to Brandon</option></select></div>
+            <div class="field"><label for="bg">Country / cultural background <span class="opt">(optional)</span></label><input type="text" id="bg" name="bg" maxlength="80"></div>
+          </div>
+          <div class="field"><label for="langs">Languages spoken <span class="opt">(optional)</span></label><input type="text" id="langs" name="langs" maxlength="120" placeholder="e.g. English, Igbo, French"></div>
+        </fieldset>
+
+        <fieldset class="fs" data-step="1" hidden>
+          <legend>What are you looking for?</legend>
+          <p class="fine">Choose as many as you like.</p>
+          <div class="checks" id="needs"></div>
+          <div class="field"><label for="value">What would make HER Brandon valuable to you? <span class="opt">(optional)</span></label><textarea id="value" name="value" maxlength="800"></textarea></div>
+        </fieldset>
+
+        <fieldset class="fs" data-step="2" hidden>
+          <legend>Everyone brings something.</legend>
+          <div class="grid2">
+            <div class="field"><label for="prof">Current or previous profession</label><input type="text" id="prof" name="prof" maxlength="100"></div>
+            <div class="field"><label for="edu">Education / qualifications <span class="opt">(optional)</span></label><input type="text" id="edu" name="edu" maxlength="120"></div>
+          </div>
+          <div class="gl" id="skillsLbl">Skills</div>
+          <div class="checks" id="formSkills" role="group" aria-labelledby="skillsLbl"></div>
+          <div class="field"><label for="otherSkills">Other skills <span class="opt">(optional)</span></label><input type="text" id="otherSkills" name="otherSkills" maxlength="200"></div>
+          <div class="grid2">
+            <div class="field"><label for="biz">Business or entrepreneurial experience</label><input type="text" id="biz" name="biz" maxlength="200"></div>
+            <div class="field"><label for="services">Services you can provide</label><input type="text" id="services" name="services" maxlength="200"></div>
+            <div class="field"><label for="industries">Industries you know</label><input type="text" id="industries" name="industries" maxlength="200"></div>
+            <div class="field"><label for="interestsTxt">Interests</label><input type="text" id="interestsTxt" name="interestsTxt" maxlength="200"></div>
+          </div>
+          <div class="field"><label for="goodAt">What is something you’re really good at?</label><textarea id="goodAt" name="goodAt" maxlength="600"></textarea></div>
+          <div class="field"><label for="mentor">Would you be interested in helping or mentoring another woman?</label><select id="mentor" name="mentor"><option value="">Select…</option><option>Yes</option><option>Maybe</option><option>Not right now</option></select></div>
+        </fieldset>
+
+        <fieldset class="fs" data-step="3" hidden>
+          <legend>Find your people</legend>
+          <div class="gl" id="enjoyLbl">What do you enjoy?</div>
+          <div class="checks" id="enjoy" role="group" aria-labelledby="enjoyLbl"></div>
+          <div class="gl" id="circLbl">Which HER Circles interest you?</div>
+          <div class="checks" id="circlePick" role="group" aria-labelledby="circLbl"></div>
+
+          <h3 style="margin-top:1.8rem;font-size:1.6rem">Your privacy choices</h3>
+          <p class="fine">Nothing is ticked for you. You decide what is shared, and you can change or withdraw any choice later.</p>
+          <div class="consent">
+            <label class="ck"><input type="checkbox" name="c_participation" id="c_participation"><span><strong>Required <span class="req">*</span></strong> — I consent to HER Brandon collecting and using the information I provide for the purpose of administering the HER Brandon pilot, communicating with me, understanding participant needs and facilitating relevant community or professional connections.</span></label>
+            <span class="err" id="e-consent"></span>
+            <label class="ck"><input type="checkbox" name="c_introduction"><span><strong>Optional</strong> — I give HER Brandon permission to share my first name, selected interests and relevant skills with another HER Brandon participant when the HER Brandon team believes there may be a useful social or professional connection.<span class="help">We will not automatically publish your profile or contact details to all members.</span></span></label>
+            <label class="ck"><input type="checkbox" name="c_contact"><span><strong>Optional</strong> — If HER Brandon identifies a potential match or introduction, I give HER Brandon permission to share my selected contact information with that person after informing me about the proposed connection.<span class="help">You’ll be able to approve each introduction before any direct contact details are exchanged.</span></span></label>
+            <label class="ck"><input type="checkbox" name="c_group"><span><strong>Optional</strong> — I would like to be invited to HER Brandon group communications and understand that, depending on the communication platform used, other participants may be able to see my name, profile or phone number.</span></label>
+            <label class="ck"><input type="checkbox" name="c_email"><span><strong>Optional</strong> — I would like to receive HER Brandon news, events and community updates by email.</span></label>
+          </div>
+          <p class="fine"><strong>Your information belongs to you.</strong> HER Brandon will not sell your personal information. You may ask to update or withdraw your information or change your communication preferences.</p>
+          <div class="links"><a href="#" data-modal="privacy">Privacy Notice</a><a href="#" data-modal="guidelines">Community Guidelines</a><a href="#" data-modal="terms">Terms of Participation</a><a href="#contact">Contact HER Brandon</a></div>
+        </fieldset>
+
+        <div class="nav-btns">
+          <button type="button" class="btn btn-ghost" id="back" hidden>← Back</button>
+          <button type="button" class="btn btn-primary" id="next" style="margin-left:auto">Continue →</button>
+        </div>
+        <p class="fine" id="consentHint" hidden style="margin-top:1rem;text-align:right">Please tick the required consent above to enable registration.</p>
+        <p class="err" id="formErr" role="alert" style="margin-top:1rem"></p>
+      </form>
+      <div class="success" id="success" hidden tabindex="-1">
+        <div class="seal">✦</div>
+        <h3>Welcome to HER Brandon.</h3>
+        <p class="lead" style="margin-inline:auto">Thank you — we’re genuinely glad you’re here. Someone from the HER Brandon team will be in touch about what’s next. Nothing will be shared about you without the choices you just made.</p>
+        <p class="fine">You can ask to update or withdraw your information at any time through the contact section below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap rv">
+    <h2>Your Brandon story doesn’t have to be written alone.</h2>
+    <p class="lead">Whether you’re looking for friendship, professional connections, mentorship, business opportunities or simply women who understand what starting again feels like, there is room for you here.</p>
+    <p style="margin-top:1.6rem"><a class="btn btn-primary" href="#join">JOIN HER BRANDON</a></p>
+    <p class="small-line">Come as you are. Bring what you know. Find your people.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap center rv">
+    <div class="eyebrow">Contact</div>
+    <h2>Say hello.</h2>
+    <p class="lead">Questions, ideas, or a request to update or withdraw your information? We’d love to hear from you.</p>
+    <div class="contact"><p><strong>Email:</strong> <a href="mailto:thecatalystconsulting36@gmail.com">thecatalystconsulting36@gmail.com</a></p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#home"><svg class="mark mark-lg" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="57" fill="#fdf8f1" stroke="#b8934a" stroke-width="1.6"/><circle cx="60" cy="60" r="51" fill="none" stroke="#d9bd82" stroke-width=".7"/><path d="M46.0 55.0C47.0 42.0 54.0 40.0 60.0 40.0C66.0 40.0 73.0 42.0 74.0 55.0Z" fill="#7d5a9a"/><path d="M70.7 73.0C71.7 60.0 78.7 58.0 84.7 58.0C90.7 58.0 97.7 60.0 98.7 73.0Z" fill="#5b3d78"/><path d="M61.3 102.0C62.3 89.0 69.3 87.0 75.3 87.0C81.3 87.0 88.3 89.0 89.3 102.0Z" fill="#a85d73"/><path d="M30.7 102.0C31.7 89.0 38.7 87.0 44.7 87.0C50.7 87.0 57.7 89.0 58.7 102.0Z" fill="#c98a98"/><path d="M21.3 73.0C22.3 60.0 29.3 58.0 35.3 58.0C41.3 58.0 48.3 60.0 49.3 73.0Z" fill="#7d5a9a"/><circle cx="60.0" cy="32.0" r="16.5" fill="#1d1416"/><ellipse cx="60.0" cy="34.0" rx="12.5" ry="14" fill="#5c3a21"/><path d="M48.5 31.0C48.0 17.0 72.0 17.0 71.5 31.0C66.0 25.0 54.0 25.0 48.5 31.0Z" fill="#1d1416"/><circle cx="56.0" cy="35.0" r="1.1" fill="#2b1a22"/><circle cx="64.0" cy="35.0" r="1.1" fill="#2b1a22"/><path d="M56.5 40.0Q60.0 43.0 63.5 40.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M70.7 56.0C68.7 34.0 100.7 34.0 98.7 56.0C99.7 66.0 92.7 69.0 84.7 69.0C76.7 69.0 69.7 66.0 70.7 56.0Z" fill="#c98a98"/><ellipse cx="84.7" cy="52.0" rx="11" ry="12.5" fill="#c68642"/><path d="M74.7 47.0C78.7 41.0 90.7 41.0 94.7 47.0C89.7 44.0 79.7 44.0 74.7 47.0Z" fill="#c98a98"/><circle cx="80.7" cy="53.0" r="1.1" fill="#2b1a22"/><circle cx="88.7" cy="53.0" r="1.1" fill="#2b1a22"/><path d="M81.2 58.0Q84.7 61.0 88.2 58.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><ellipse cx="75.3" cy="81.0" rx="12.5" ry="14" fill="#8d5524"/><path d="M62.8 79.0C61.3 64.0 89.3 64.0 87.8 79.0C82.3 74.0 68.3 74.0 62.8 79.0Z" fill="#d9a441"/><path d="M63.3 73.0Q75.3 67.0 87.3 73.0" stroke="#fff" stroke-opacity=".7" stroke-width="1.4" fill="none"/><circle cx="71.3" cy="82.0" r="1.1" fill="#2b1a22"/><circle cx="79.3" cy="82.0" r="1.1" fill="#2b1a22"/><path d="M71.8 87.0Q75.3 90.0 78.8 87.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="44.7" cy="67.0" r="5.5" fill="#2b1a22"/><ellipse cx="44.7" cy="81.0" rx="12.5" ry="14" fill="#f2d1b3"/><path d="M33.2 78.0C32.7 64.0 56.7 64.0 56.2 78.0C50.7 72.0 38.7 72.0 33.2 78.0Z" fill="#2b1a22"/><circle cx="40.7" cy="82.0" r="1.1" fill="#2b1a22"/><circle cx="48.7" cy="82.0" r="1.1" fill="#2b1a22"/><path d="M41.2 87.0Q44.7 90.0 48.2 87.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M23.3 49.0C17.3 64.0 23.3 72.0 27.3 73.0L43.3 73.0C47.3 72.0 53.3 64.0 47.3 49.0Z" fill="#3a2418"/><ellipse cx="35.3" cy="52.0" rx="12.5" ry="14" fill="#a56b46"/><path d="M23.8 49.0C23.3 35.0 47.3 35.0 46.8 49.0C41.3 43.0 29.3 43.0 23.8 49.0Z" fill="#3a2418"/><circle cx="31.3" cy="53.0" r="1.1" fill="#2b1a22"/><circle cx="39.3" cy="53.0" r="1.1" fill="#2b1a22"/><path d="M31.8 58.0Q35.3 61.0 38.8 58.0" stroke="#8a3b4c" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M60 67c-8-5-10-9-6.5-12 2.4-2 5 0 6.5 2.2 1.5-2.2 4.1-4.2 6.5-2.2 3.5 3 1.5 7-6.5 12z" fill="#b8934a"/></svg><span><b style="color:#e6b7c3">HER</b> Brandon</span></a>
+        <p class="tri">Opportunity • Friendship • Belonging</p>
+        <p>Brandon, Manitoba, Canada</p>
+        <p class="fine" style="color:#cdbad6">Instagram · Facebook · LinkedIn <span>(links coming soon)</span></p>
+      </div>
+      <nav class="fnav" aria-label="Footer"><a href="#about">About</a><a href="#join">Join</a><a href="#contact">Contact</a></nav>
+      <nav class="fnav" aria-label="Policies"><a href="#" data-modal="privacy">Privacy</a><a href="#" data-modal="guidelines">Community Guidelines</a><a href="#" data-modal="terms">Terms</a></nav>
+    </div>
+    <div class="disc">
+      <p>HER Brandon is currently a founder-led pilot community initiative in Brandon, Manitoba. It is not a government agency, immigration service, employment agency or registered charity. HER Brandon does not provide immigration, legal, medical, financial or mental-health advice and does not guarantee employment, income, customers or other outcomes.</p>
+      <p>Copyright © 2026 HER Brandon.</p>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<dialog id="pf" aria-labelledby="pfTitle">
+  <div class="pf-box">
+    <div class="pf-head"><h3 id="pfTitle">Create your portfolio page</h3><button type="button" class="x" id="pfClose" aria-label="Close">×</button></div>
+    <div id="pfWizard">
+      <ol class="progress" id="pfProg" aria-label="Portfolio progress"><li>You</li><li>Skills</li><li>Story</li><li>Contact</li></ol>
+      <form id="pfForm" novalidate>
+        <fieldset class="fs" data-pf="0">
+          <legend>First, tell us about you</legend>
+          <div class="pf-photo">
+            <div class="pf-ph" id="pfPh" aria-hidden="true">+</div>
+            <div><label class="btn btn-ghost btn-sm" for="pfFile">Add your photo</label><input type="file" id="pfFile" accept="image/*" class="sr">
+            <p class="fine" style="margin:.4rem 0 0">Optional · stays on your device</p><span class="err" id="pfe-photo"></span></div>
+          </div>
+          <div class="field"><label for="pfName">Your name <span class="req">*</span></label><input type="text" id="pfName" maxlength="60" autocomplete="name"><span class="err" id="pfe-name"></span></div>
+          <div class="field"><label for="pfTitle2">What do you do? <span class="req">*</span></label><input type="text" id="pfTitle2" maxlength="70" placeholder="e.g. Accountant, Baker, Marketing Consultant"><span class="err" id="pfe-title"></span></div>
+        </fieldset>
+        <fieldset class="fs" data-pf="1" hidden>
+          <legend>What are you really good at?</legend>
+          <div class="field"><label for="pfSkills">Your skills or services <span class="req">*</span></label><textarea id="pfSkills" maxlength="600" placeholder="One per line, or separated by commas&#10;e.g. Bookkeeping, Tax filing, Payroll"></textarea><span class="err" id="pfe-skills"></span></div>
+        </fieldset>
+        <fieldset class="fs" data-pf="2" hidden>
+          <legend>Tell your story</legend>
+          <div class="field"><label for="pfStory">A few sentences about your experience or what drives you <span class="req">*</span></label><textarea id="pfStory" maxlength="900" placeholder="e.g. I have 10 years of experience in … I moved to Brandon in … and I love helping …"></textarea><span class="err" id="pfe-story"></span></div>
+        </fieldset>
+        <fieldset class="fs" data-pf="3" hidden>
+          <legend>How should people reach you?</legend>
+          <p class="fine">Your page will have a big “Contact me” button. Only add details you’re happy for people who see your page to use.</p>
+          <div class="field"><label for="pfEmail">Email <span class="req">*</span></label><input type="email" id="pfEmail" maxlength="120" autocomplete="email"><span class="err" id="pfe-email"></span></div>
+          <div class="field"><label for="pfPhone">Phone / WhatsApp <span class="opt">(optional — include country code)</span></label><input type="tel" id="pfPhone" maxlength="30" autocomplete="tel" placeholder="+1 204 555 0123"><span class="err" id="pfe-phone"></span></div>
+        </fieldset>
+        <div class="nav-btns"><button type="button" class="btn btn-ghost" id="pfBack" hidden>← Back</button><button type="button" class="btn btn-primary" id="pfNext" style="margin-left:auto">Continue →</button></div>
+      </form>
+    </div>
+    <div id="pfResult" hidden>
+      <p class="fine" style="margin-top:0">Here’s your page. Download it to keep or share, or save it as a PDF.</p>
+      <iframe id="pfFrame" title="Your portfolio page preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      <div class="pf-actions"><button type="button" class="btn btn-primary btn-sm" id="pfDownload">⬇ Download my page</button><button type="button" class="btn btn-ghost btn-sm" id="pfPrint">Save as PDF</button><button type="button" class="btn btn-ghost btn-sm" id="pfEdit">Edit my answers</button></div>
+      <p class="fine">You can keep the file for yourself, or publish your page at your own link below. Anyone who sees your page will see the contact details you added.</p>
+      <div class="pf-pub" id="pfPub">
+        <h4>Publish at your own link <span class="opt">(optional)</span></h4>
+        <p class="pf-url" id="pfUrl" aria-live="polite"></p>
+        <label class="ck"><input type="checkbox" id="pfConsent"><span><strong>Required to publish</strong> — I understand my photo, story and contact details will be public, so anyone with the link can see them. My page will follow the HER Brandon Community Guidelines, and I can unpublish it at any time.</span></label>
+        <div class="pf-actions"><button type="button" class="btn btn-primary btn-sm" id="pfPublish" disabled>🌐 Publish my page</button></div>
+        <p class="err" id="pfPubErr" role="alert"></p>
+      </div>
+      <div class="pf-pub" id="pfLive" hidden>
+        <h4>🎉 Your page is live</h4>
+        <p><a id="pfLink" href="#" target="_blank" rel="noopener"></a></p>
+        <div class="pf-actions"><button type="button" class="btn btn-primary btn-sm" id="pfCopy">Copy link</button><a class="btn btn-ghost btn-sm" id="pfWa" target="_blank" rel="noopener">Share on WhatsApp</a></div>
+        <p class="fine"><strong>Your private edit code:</strong> <code id="pfCode"></code> <button type="button" class="btn btn-ghost btn-sm" id="pfCopyCode">Copy code</button><br>Save it somewhere safe. You need it to update or unpublish your page from another device. This page remembers it on this device.</p>
+        <div class="pf-actions"><button type="button" class="btn btn-ghost btn-sm" id="pfUnpub">Unpublish my page</button></div>
+        <p class="err" id="pfLiveErr" role="alert"></p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="modal" aria-labelledby="mTitle"><div class="mod"><button class="x" aria-label="Close" onclick="document.getElementById('modal').close()">×</button><h3 id="mTitle"></h3><div id="mBody"></div></div></dialog>
+
+<script>
+(function(){
+"use strict";
+/* ---------- CONFIG: wire a real backend here ---------- */
+const CONFIG = {
+  submitEndpoint: "/api/register", // Netlify Function (see netlify.toml)
+  consentVersion: "v0.1-draft" // bump whenever consent wording changes
+};
+
+const SKILLS=["Marketing","Banking","Accounting","Technology","Healthcare","Teaching","Cooking","Baking","Photography","Fashion","Sewing","Hair & Beauty","Administration","Customer Service","Business Strategy","Graphic Design","Social Media","Writing","Languages","Project Management","Entrepreneurship","Trades","Other"];
+const NEEDS=["Friendship and social connection","Professional networking","Employment connections","Mentorship","Entrepreneurship/business connections","Customers/business referrals","Canadian professional experience","Volunteering","Community activities","Learning opportunities","Someone with similar interests","Other"];
+const ENJOY=["Coffee","Walking","Fitness","Faith","Music","Books","Food","Movies","Fashion","Business","Entrepreneurship","Professional networking","Volunteering","Parenting/family","Arts & crafts","Travel","Wellness","Other"];
+const CIRCLES=[["☕","Coffee & Conversation"],["💼","Professional Women"],["🚀","Entrepreneurs"],["🌷","Women 40+"],["👩‍👧","Mothers & Family Life"],["🚶","Walking & Wellness"],["📚","Books & Ideas"],["🎵","Music & Culture"],["🙏","Faith & Friendship"],["🌎","New to Brandon"]];
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const el=(t,a={},c="")=>{const e=document.createElement(t);for(const k in a){if(k==="class")e.className=a[k];else e.setAttribute(k,a[k])}if(c)e.textContent=c;return e};
+
+/* ---------- shared skill selection ---------- */
+const selSkills=new Set();
+function renderSkillChips(){
+  const box=$("#skillChips");box.textContent="";
+  SKILLS.forEach(s=>{const b=el("button",{class:"chip",type:"button","aria-pressed":selSkills.has(s)},s);
+    b.onclick=()=>{selSkills.has(s)?selSkills.delete(s):selSkills.add(s);renderSkillChips();syncFormSkills()};box.appendChild(b)});
+}
+function checkGroup(container,name,items,onchange){
+  items.forEach((it,i)=>{const id=name+i;const lab=el("label",{class:"ck",for:id});
+    const inp=el("input",{type:"checkbox",id,name,value:typeof it==="string"?it:it[1]});
+    const sp=el("span",{},typeof it==="string"?it:it[0]+" "+it[1]);lab.append(inp,sp);container.appendChild(lab);
+    if(onchange)inp.addEventListener("change",()=>onchange(inp))});
+}
+function syncFormSkills(){$$("input[name=skills]").forEach(i=>i.checked=selSkills.has(i.value))}
+renderSkillChips();
+checkGroup($("#needs"),"needs",NEEDS);
+checkGroup($("#formSkills"),"skills",SKILLS,i=>{i.checked?selSkills.add(i.value):selSkills.delete(i.value);renderSkillChips()});
+checkGroup($("#enjoy"),"enjoy",ENJOY);
+checkGroup($("#circlePick"),"circles",CIRCLES.map(c=>c));
+$("#circleCards").append(...CIRCLES.map(c=>{const d=el("div",{class:"circle"});d.append(el("span",{class:"e","aria-hidden":"true"},c[0]),el("span",{},c[1]));return d}));
+
+
+/* ---------- animated illustrated women ---------- */
+let __wid=0;
+function sh(hex,a){const n=parseInt(hex.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const f=c=>Math.max(0,Math.min(255,Math.round(a<0?c*(1+a):c+(255-c)*a)));return"#"+[f(r),f(g),f(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function woman(o){
+  const id="w"+(++__wid),sk=o.skin,hair=o.hair,cl=o.cloth,w=o.wrap||"#c98a98",bg=o.bg||"#f3e6ea";
+  const gold="#c9a45c",dsk=sh(sk,-.22),lum=parseInt(sk.slice(1,3),16),lip=lum<150?"#8a3b4c":"#b0546a",hl="#fff";
+  const isH=o.style==="hijab",face="M69 104C69 76 80 64 100 64C120 64 131 76 131 104C131 132 119 156 100 160C81 156 69 132 69 104Z";
+  let back="",front="",drape="";
+  const frontCap=`<path d="M66 110C58 40 142 40 134 110C128 90 118 80 100 80C82 80 72 90 66 110Z" fill="${hair}"/><path d="M78 76C90 68 110 68 122 76" stroke="${hl}" stroke-opacity=".18" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;
+  switch(o.style){
+    case"afro":back=`<circle cx="100" cy="80" r="60" fill="${hair}"/><circle cx="100" cy="80" r="60" fill="url(#${id}h)"/>`;front=`<path d="M64 112C54 60 146 60 136 112C128 90 118 82 100 82C82 82 72 90 64 112Z" fill="${hair}"/>`;break;
+    case"headwrap":front=`<path d="M64 96C52 58 66 32 100 30C134 32 148 58 136 96C122 82 78 82 64 96Z" fill="${w}"/><path d="M112 38C128 6 178 14 168 54C160 36 140 30 112 38Z" fill="${sh(w,-.1)}"/><path d="M70 62C88 50 118 50 132 62M66 76C86 64 116 64 134 76" stroke="${sh(w,-.28)}" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M66 88C84 78 116 78 134 88" stroke="${gold}" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M120 34C136 22 156 24 162 40" stroke="${hl}" stroke-opacity=".3" stroke-width="2" fill="none"/>`;break;
+    case"hijab":drape=`<path fill-rule="evenodd" d="M100 32C134 32 158 58 153 112C151 150 166 180 190 226L198 250L2 250L10 226C34 180 49 150 47 112C42 58 66 32 100 32ZM73 104C73 80 85 68 100 68C115 68 127 80 127 104C127 130 118 150 100 154C82 150 73 130 73 104Z" fill="${w}"/><path d="M58 70C52 110 56 150 40 196M142 70C148 110 144 150 160 196M88 196C100 206 100 206 112 196" stroke="${sh(w,-.2)}" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".7"/><path d="M60 60C70 44 90 38 106 38" stroke="${hl}" stroke-opacity=".28" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="100" cy="176" r="3.4" fill="${gold}"/>`;break;
+    case"braids":{let br="";[[68,0],[60,-2],[52,-4]].forEach((p,k)=>{for(let i=0;i<11;i++){const y=112+i*13+k*3,xl=p[0]-i*1.1+Math.sin(i*.8)*1.6,xr=200-p[0]+i*1.1-Math.sin(i*.8)*1.6;br+=`<ellipse cx="${xl.toFixed(1)}" cy="${y}" rx="4.6" ry="8" fill="${i%2?sh(hair,.12):hair}"/><ellipse cx="${xr.toFixed(1)}" cy="${y}" rx="4.6" ry="8" fill="${i%2?sh(hair,.12):hair}"/>`}br+=`<circle cx="${p[0]-12}" cy="${112+10*13+k*3+10}" r="3" fill="${gold}"/><circle cx="${200-p[0]+12}" cy="${112+10*13+k*3+10}" r="3" fill="${gold}"/>`});front=br+frontCap;break}
+    case"bun":back=`<circle cx="100" cy="44" r="17" fill="${hair}"/><circle cx="100" cy="44" r="17" fill="url(#${id}h)"/>`;front=frontCap+`<path d="M100 66V80" stroke="${sh(hair,.35)}" stroke-width="1.4"/>`;break;
+    case"long":back=`<path d="M62 104C42 150 50 214 70 238L130 238C150 214 158 150 138 104Z" fill="${hair}"/>`;front=`<path d="M66 114C58 40 142 40 134 114C130 90 118 76 98 74C84 78 74 94 66 114Z" fill="${hair}"/><path d="M68 124C58 160 62 206 80 236L92 216C80 190 78 156 78 130Z" fill="${hair}"/><path d="M132 124C142 160 138 206 120 236L108 216C120 190 122 156 122 130Z" fill="${hair}"/><path d="M70 100C80 80 96 76 108 78" stroke="${hl}" stroke-opacity=".16" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;break;
+    case"bob":back=`<path d="M63 104C50 134 56 170 76 174L124 174C144 170 150 134 137 104Z" fill="${hair}"/>`;front=`<path d="M66 114C58 40 142 40 134 114C128 92 114 78 96 76C82 80 74 94 66 114Z" fill="${hair}"/><path d="M70 100C80 82 96 78 108 80" stroke="${hl}" stroke-opacity=".3" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;break;
+    case"curly":{let c="";[[64,86],[76,66],[100,58],[124,66],[136,86],[58,108],[142,108],[60,132],[140,132],[64,152],[136,152]].forEach(p=>c+=`<circle cx="${p[0]}" cy="${p[1]}" r="17" fill="${hair}"/>`);back=c;front=`<path d="M66 108C60 42 140 42 134 108C128 90 118 82 100 82C82 82 72 90 66 108Z" fill="${hair}"/><circle cx="82" cy="78" r="9" fill="${hair}"/><circle cx="100" cy="74" r="9" fill="${hair}"/><circle cx="118" cy="78" r="9" fill="${hair}"/>`;break}
+  }
+  const ears=isH?"":`<ellipse cx="69" cy="112" rx="5" ry="8" fill="${sk}"/><ellipse cx="131" cy="112" rx="5" ry="8" fill="${sk}"/><circle cx="69" cy="122" r="2.6" fill="${gold}"/><circle cx="131" cy="122" r="2.6" fill="${gold}"/>`;
+  const glasses=o.glasses?`<g fill="none" stroke="#4a3358" stroke-width="1.7"><rect x="73" y="99" width="22" height="18" rx="7"/><rect x="105" y="99" width="22" height="18" rx="7"/><path d="M95 106h10"/></g>`:"";
+  const brow=o.style==="bob"||hair.toLowerCase()==="#d9d4dc"?"#9a929e":hair;
+  const body=isH?"":`<path d="M87 148V190L100 220L113 190V148Z" fill="${sk}"/><path d="M72 192L88 184L100 222L86 246Z" fill="${sh(cl,-.14)}"/><path d="M128 192L112 184L100 222L114 246Z" fill="${sh(cl,-.14)}"/><path d="M90 188Q100 210 110 188" stroke="${gold}" stroke-width="1.4" fill="none"/><circle cx="100" cy="206" r="2.4" fill="${gold}"/>`;
+  return `<svg viewBox="20 24 160 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice" aria-hidden="true" style="--d:${o.d||0}s">
+  <defs><linearGradient id="${id}b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${sh(bg,.35)}"/><stop offset="1" stop-color="${bg}"/></linearGradient><radialGradient id="${id}h" cx=".3" cy=".25" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+  <rect width="200" height="250" fill="url(#${id}b)"/><circle cx="100" cy="118" r="78" fill="#fff" opacity=".28"/>
+  <g class="head">${back}</g>
+  <path d="M-10 250C-8 208 36 192 78 187L122 187C164 192 208 208 210 250Z" fill="${cl}"/><path d="M20 214C44 198 70 192 90 190" stroke="${hl}" stroke-opacity=".14" stroke-width="3" fill="none" stroke-linecap="round"/>${body}
+  <g class="head">
+  ${isH?"":`<path d="M87 150Q100 172 113 150V168Q100 180 87 168Z" fill="${dsk}" opacity=".4"/>`}
+  ${ears}<path d="${face}" fill="${sk}"/><path d="M131 104C131 132 119 156 100 160C112 150 122 130 122 104C122 86 118 72 110 66C124 68 131 82 131 104Z" fill="${dsk}" opacity=".3"/>
+  <path d="M74 99Q84 92 95 97M105 97Q116 92 126 99" stroke="${brow}" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+  <g class="eye"><path d="M76 108Q85 101 94 108Q85 113.5 76 108Z" fill="#2b1a22"/><circle cx="87" cy="106.6" r="1.3" fill="#fff" opacity=".85"/><path d="M75 107Q85 99 95 107" stroke="#2b1a22" stroke-width="1.4" fill="none" stroke-linecap="round"/></g>
+  <g class="eye"><path d="M106 108Q115 101 124 108Q115 113.5 106 108Z" fill="#2b1a22"/><circle cx="117" cy="106.6" r="1.3" fill="#fff" opacity=".85"/><path d="M105 107Q115 99 125 107" stroke="#2b1a22" stroke-width="1.4" fill="none" stroke-linecap="round"/></g>${glasses}
+  <path d="M100 112Q96.5 124 95.5 128Q100 131.5 104.5 128" stroke="${dsk}" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+  <ellipse cx="79" cy="129" rx="9" ry="5" fill="#d9677a" opacity=".13"/><ellipse cx="121" cy="129" rx="9" ry="5" fill="#d9677a" opacity=".13"/>
+  <path d="M89.5 140Q95 136.6 100 138.6Q105 136.6 110.5 140Q100 143.4 89.5 140Z" fill="${lip}"/><path d="M90.5 140.6Q100 150 109.5 140.6Q100 144 90.5 140.6Z" fill="${lip}" opacity=".9"/>
+  ${front}${drape}</g></svg>`;
+}
+const WOMEN=[
+ {skin:"#6b4128",hair:"#1d1416",style:"afro",cloth:"#5b3d78",bg:"#f0d3dc"},
+ {skin:"#c68642",hair:"#2b1a22",style:"hijab",wrap:"#c98a98",cloth:"#4a2f5e",bg:"#e4d8f0"},
+ {skin:"#8d5524",hair:"#2b1a22",style:"headwrap",wrap:"#d4a24c",cloth:"#a85d73",bg:"#f6e4e6"},
+ {skin:"#f0cfb2",hair:"#15121a",style:"long",cloth:"#8e6bb0",bg:"#e4d8f0"},
+ {skin:"#a56b46",hair:"#3a2418",style:"bun",cloth:"#3b2644",bg:"#f7ead2",glasses:1},
+ {skin:"#e8b995",hair:"#d9d4dc",style:"bob",cloth:"#a85d73",bg:"#f0d3dc"},
+ {skin:"#6e4528",hair:"#1d1416",style:"braids",cloth:"#7d5a9a",bg:"#f6e4e6"},
+ {skin:"#f6dcc6",hair:"#7a4a2b",style:"curly",cloth:"#c98a98",bg:"#e4d8f0"}
+];
+(function(){
+  const sc=$("#heroScene");if(!sc)return;
+  const pos=[ // [idx,left,top,width%,arch,delay]
+   [0,3,8,29,1,0],[1,35,2,31,1,.6],[2,68,10,29,1,1.2],[3,10,50,28,1,1.8],[4,40,46,30,1,.3],[5,70,52,28,1,.9]];
+  let html='<div class="blob b1"></div><div class="blob b2"></div>';
+  pos.forEach(p=>{const w=Object.assign({},WOMEN[p[0]],{d:p[5]});html+=`<div class="av arch" style="left:${p[1]}%;top:${p[2]}%;width:${p[3]}%;aspect-ratio:4/5;--d:${p[5]}s">${woman(w)}</div>`});
+  const cup='<svg viewBox="0 0 60 60" aria-hidden="true"><g class="steam"><path d="M22 18c-4-5 4-8 0-13"/><path d="M30 18c-4-5 4-8 0-13"/><path d="M38 18c-4-5 4-8 0-13"/></g><path d="M12 26h34v10a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="#fff" stroke="#d9bd82" stroke-width="2"/><path d="M46 29h4a6 6 0 0 1 0 12h-5" fill="none" stroke="#d9bd82" stroke-width="2"/></svg>';
+  html+='<div class="gpill" style="left:0">☕ Friendship</div><div class="gpill" style="left:33%;animation-delay:.8s">💼 Opportunity</div><div class="gpill" style="left:68%;animation-delay:1.6s">🌷 Belonging</div>';
+  sc.innerHTML=html;
+  const st=$("#strip");if(st){st.innerHTML=WOMEN.map((w,i)=>`<div class="av arch" style="--d:${(i*.35).toFixed(2)}s">${woman(Object.assign({},w,{d:i*.35}))}</div>`).join("")}
+})();
+
+/* ---------- nav ---------- */
+const burger=$("#burger"),mob=$("#mobile");
+burger.onclick=()=>{const o=mob.classList.toggle("open");burger.setAttribute("aria-expanded",o)};
+$$("#mobile a").forEach(a=>a.addEventListener("click",()=>{mob.classList.remove("open");burger.setAttribute("aria-expanded","false")}));
+
+/* ---------- reveal ---------- */
+if("IntersectionObserver" in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+  $$(".rv").forEach(n=>io.observe(n));
+}else $$(".rv").forEach(n=>n.classList.add("in"));
+
+/* ---------- modals ---------- */
+const MODALS={
+  founder:["A Note From Our Founder","<p>Dear friend,</p><p>Starting a new life in a new country is a lot. Work looks different. Family life looks different. And the people who used to cheer you on, check in on you and say “let’s hang out” are suddenly far away.</p><p>I know that feeling. I also know that you arrive with so much: your skills, your experience, your dreams, and the love you carry for your family.</p><p>HER Brandon is a small, friendly community where women support each other. Some will find a friend to share a coffee with. Some will find a mentor, a customer or a first Canadian connection. Many will find both.</p><p>I can’t promise jobs or income, but I promise you’ll be treated with kindness and respect, and that your information stays yours.</p><p>You don’t have to do this alone. Come as you are, and we’ll start with a hello.</p><p style='font-size:1.1rem;color:var(--purple-d);margin-bottom:0'>With warmth,<br><strong>Chioma Nwahiri</strong><br><span style='font-size:1rem'>Founder, HER Brandon</span></p>"],
+  privacy:["Privacy Notice","<p class='fine'>Last updated: October 2026</p><p>HER Brandon is a founder-led pilot community in Brandon, Manitoba, run by Chioma Nwahiri (“we”). This notice explains in plain language what we do with your information.</p><h4>What we collect</h4><p>What you type into the registration form: your name, email, optional phone number, age range, how long you’ve lived in Brandon, optional background and languages, what you’re looking for, your skills and interests, and the HER Circles you choose. We also record each privacy choice you make, with the date and time. If you publish a portfolio page, we store your photo, story, skills and contact details. We do not ask for ID numbers, immigration documents, banking details or health information, and please don’t send them to us.</p><h4>Why we use it</h4><p>To run the pilot, to contact you, to understand what participants need, and, only if you tick the introduction permission, to suggest connections with other women.</p><h4>Who can see it</h4><p>Only the HER Brandon founder sees your registration. We never publish it and we never sell it. We share your first name, interests and skills with another participant only if you ticked that permission. We share your contact details only with your permission, after telling you about the introduction. You receive emails or group invitations only if you opted in.</p><h4>Portfolio pages</h4><p>A portfolio page is public once you publish it. Anyone with the link can see it, and copies may exist even after you unpublish. We ask search engines not to list pages, but we can’t control every website. You can unpublish at any time.</p><h4>Where it is stored</h4><p>We use service providers: Airtable (registrations) and Netlify (website and portfolio pages). They may store data outside Canada, including in the United States. Our ads appear on Meta (Facebook and Instagram), but we do not install Meta tracking on this website, and we do not use advertising cookies or tracking analytics.</p><h4>How long we keep it</h4><p>While you take part in the pilot, and for up to 12 months after it ends, unless you ask us to delete it sooner.</p><h4>Your choices</h4><p>You can ask to see, correct or delete your information, withdraw any consent, or change your communication preferences at any time. Email <a href='mailto:thecatalystconsulting36@gmail.com'>thecatalystconsulting36@gmail.com</a> and we will respond as soon as we can, and within 30 days.</p><h4>Safety and age</h4><p>We take reasonable steps to protect your information, but no online service is perfectly secure. HER Brandon is for women aged 18 and over.</p><h4>Changes</h4><p>If we change this notice we will update the date above.</p>"],
+  guidelines:["Community Guidelines","<p>HER Brandon welcomes women from different countries, cultures, backgrounds, professions, faiths and life experiences.</p><h4>What we value</h4><p>Respect · Kindness · Confidentiality · Dignity · Inclusion</p><h4>What we don’t allow</h4><p>Discrimination of any kind. Harassment or bullying. Unsolicited selling or spam. Sharing another member’s information or stories without her permission.</p><h4>Meeting safely</h4><p>Meet new people in a public place first, tell someone where you’re going, and share personal details only when you feel comfortable. Introductions are suggestions, not endorsements.</p><h4>If something isn’t right</h4><p>Email <a href='mailto:thecatalystconsulting36@gmail.com'>thecatalystconsulting36@gmail.com</a>. HER Brandon may remove participants or portfolio pages whose behaviour or content compromises the safety or dignity of others.</p>"],
+  terms:["Terms of Participation","<p class='fine'>Last updated: October 2026</p><h4>What HER Brandon is</h4><p>HER Brandon is a founder-led pilot community initiative in Brandon, Manitoba. It is not a government agency, immigration service, employment agency or registered charity, and it is not affiliated with any government body, university or other organization unless we say so publicly.</p><h4>Who can join</h4><p>Women aged 18 and over who agree to these terms and our Community Guidelines.</p><h4>What we offer, and what we don’t</h4><p>We aim to help women meet and to suggest introductions. We do not guarantee friendships, jobs, customers, income or any other outcome. We do not provide immigration, legal, medical, financial or mental-health advice.</p><h4>Your responsibilities</h4><p>Give honest information, treat others with respect, keep other members’ information confidential, and use your own judgment and care when you meet people. You are responsible for your own decisions and safety.</p><h4>Introductions and sharing</h4><p>We share your information with another participant only as you have allowed in your privacy choices, which you can change at any time.</p><h4>Portfolio pages</h4><p>You keep ownership of your page. By publishing, you confirm that you have the right to use your photo and text, and you allow us to host and display the page while it is published. We may remove a page that breaks our Community Guidelines.</p><h4>Removal</h4><p>You can leave at any time. We may remove participants who compromise the safety or dignity of others.</p><h4>Limits of responsibility</h4><p>HER Brandon is a small pilot. To the extent allowed by law, we are not responsible for the actions of participants, for what happens when people meet, or for the outcome of any introduction.</p><h4>Changes and law</h4><p>We may update these terms and will change the date above. These terms are governed by the laws of Manitoba and Canada.</p><h4>Contact</h4><p><a href='mailto:thecatalystconsulting36@gmail.com'>thecatalystconsulting36@gmail.com</a></p>"]
+};
+const dlg=$("#modal");
+document.addEventListener("click",e=>{
+  const m=e.target.closest("[data-modal]");
+  if(m){e.preventDefault();const [t,b]=MODALS[m.dataset.modal];$("#mTitle").textContent=t;$("#mBody").innerHTML=b;dlg.showModal()}
+  const j=e.target.closest("[data-jump]");if(j){setTimeout(()=>{goStep(2)},50)}
+});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+/* ---------- form wizard ---------- */
+const form=$("#reg"),steps=$$(".fs",form),prog=$$("#progress li");
+let cur=0,openedAt=Date.now();
+function goStep(n){
+  cur=n;steps.forEach((s,i)=>s.hidden=i!==n);
+  prog.forEach((p,i)=>{p.className=i===n?"on":i<n?"done":""});
+  $("#back").hidden=n===0;
+  $("#next").textContent=n===steps.length-1?"Join HER Brandon":"Continue →";
+  $("#formErr").textContent="";
+  if(n===2)syncFormSkills();
+  updateGate();
+  const top=$("#formCard").getBoundingClientRect().top+scrollY-90;scrollTo({top,behavior:"smooth"});
+  const f=steps[n].querySelector("input,select,textarea");if(f&&n===0&&!form.dataset.touched){}
+}
+function setErr(id,msg){const e=$("#e-"+id);if(!e)return;e.textContent=msg;const f=$("#"+id);if(f){f.setAttribute("aria-invalid",msg?"true":"false");if(msg)f.setAttribute("aria-describedby","e-"+id);f.closest(".field")?.classList.toggle("bad",!!msg)}}
+function validate(n){
+  let ok=true,first=null;
+  if(n===0){
+    const v=id=>form.elements[id].value.trim();
+    [["first","Please tell us your first name."],["last","Please tell us your last name."]].forEach(([id,m])=>{const bad=!v(id);setErr(id,bad?m:"");if(bad){ok=false;first=first||$("#"+id)}});
+    const em=v("email"),re=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;const bad=!em||!re.test(em);
+    setErr("email",!em?"Please enter your email address.":(!re.test(em)?"That email doesn’t look quite right.":""));if(bad){ok=false;first=first||$("#email")}
+  }
+  if(n===3){
+    const c=$("#c_participation").checked;$("#e-consent").textContent=c?"":"This consent is needed to register. The other choices are entirely optional.";
+    if(!c){ok=false;first=$("#c_participation")}
+  }
+  if(!ok&&first)first.focus();
+  return ok;
+}
+$("#next").onclick=()=>{
+  if(!validate(cur)){$("#formErr").textContent="Please check the highlighted fields.";return}
+  if(cur<steps.length-1)goStep(cur+1);else submit();
+};
+$("#back").onclick=()=>goStep(cur-1);
+form.addEventListener("submit",e=>{e.preventDefault();$("#next").click()});
+
+/* ---------- sanitise / submit ---------- */
+const clean=(v,max=800)=>String(v==null?"":v).replace(/<[^>]*>/g,"").replace(/[\u0000-\u001f\u007f]/g," ").replace(/\s+/g," ").trim().slice(0,max);
+const many=name=>$$(`input[name="${name}"]:checked`).map(i=>clean(i.value,100));
+const IS_LAST=()=>cur===steps.length-1;
+function updateGate(){
+  if(!IS_LAST()){$("#next").disabled=false;$("#consentHint").hidden=true;return}
+  const ok=$("#c_participation").checked;$("#next").disabled=!ok;$("#consentHint").hidden=ok;
+  if(ok)$("#e-consent").textContent="";
+}
+function collect(){
+  const g=n=>clean(form.elements[n].value);
+  const skills=[...new Set([...many("skills"),...g("otherSkills").split(",").map(s=>clean(s,60)).filter(Boolean)])];
+  return {
+    first:g("first"),last:g("last"),pref:g("pref"),email:g("email").toLowerCase(),phone:g("phone"),
+    age:g("age"),tenure:g("tenure"),background:g("bg"),languages:g("langs"),
+    needs:many("needs"),valueText:g("value"),
+    profession:g("prof"),education:g("edu"),skills,business:g("biz"),services:g("services"),industries:g("industries"),interests:g("interestsTxt"),goodAt:g("goodAt"),mentor:g("mentor"),
+    enjoy:many("enjoy"),circles:many("circles")
+  };
+}
+function collectConsents(){
+  const at=new Date().toISOString();
+  return [["participation","c_participation"],["introduction","c_introduction"],["contact","c_contact"],["group","c_group"],["email","c_email"]]
+    .map(([type,name])=>({type,given:form.elements[name].checked,at,version:CONFIG.consentVersion}));
+}
+
+async function submit(){
+  const btn=$("#next");
+  if(!$("#c_participation").checked){updateGate();return}
+  const elapsed=Date.now()-openedAt;
+  try{const last=+localStorage.getItem("hb_last")||0;if(Date.now()-last<60000){$("#formErr").textContent="You’ve just submitted — please wait a minute before trying again.";return}}catch(_){}
+  btn.disabled=true;btn.textContent="Sending…";
+  const payload={registration:collect(),consents:collectConsents(),hp:form.elements.website.value,elapsed};
+  try{
+    const r=await fetch(CONFIG.submitEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    try{localStorage.setItem("hb_last",String(Date.now()))}catch(_){}
+    form.hidden=true;$("#progress").hidden=true;const s=$("#success");s.hidden=false;s.focus();
+    scrollTo({top:$("#formCard").getBoundingClientRect().top+scrollY-90,behavior:"smooth"});
+  }catch(err){
+    $("#formErr").textContent="We couldn’t send your registration just now. Please try again, or contact us and we’ll help.";
+    btn.disabled=false;btn.textContent="Join HER Brandon";
+  }
+}
+$("#c_participation").addEventListener("change",updateGate);
+
+/* ---------- portfolio builder (runs entirely in the browser) ---------- */
+const pf={photo:"",step:0,html:"",name:""};
+const pfd=$("#pf"),pfSteps=$$("#pfForm .fs"),pfProg=$$("#pfProg li");
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pfv=id=>clean($("#"+id).value,900);
+function pfErr(id,msg){const e=$("#pfe-"+id);if(e)e.textContent=msg||"";return !msg}
+function pfShow(n){
+  pf.step=n;pfSteps.forEach((s,i)=>s.hidden=i!==n);
+  pfProg.forEach((p,i)=>p.className=i===n?"on":i<n?"done":"");
+  $("#pfBack").hidden=n===0;$("#pfNext").textContent=n===3?"✦ Create my page":"Continue →";
+  pfd.scrollTop=0;
+}
+function pfSkills(){
+  const raw=$("#pfSkills").value.replace(/<[^>]*>/g,"");
+  return [...new Set(raw.split(/[\n,;•]+/).map(s=>clean(s,60)).filter(Boolean))].slice(0,12);
+}
+function pfValidate(n){
+  if(n===0){const a=pfErr("name",pfv("pfName")?"":"Please tell us your name."),b=pfErr("title",pfv("pfTitle2")?"":"Please tell us what you do.");if(!a)$("#pfName").focus();else if(!b)$("#pfTitle2").focus();return a&&b}
+  if(n===1){const ok=pfErr("skills",pfSkills().length?"":"Please add at least one skill or service.");if(!ok)$("#pfSkills").focus();return ok}
+  if(n===2){const ok=pfErr("story",pfv("pfStory").length>=20?"":"Please write a few sentences (at least 20 characters).");if(!ok)$("#pfStory").focus();return ok}
+  if(n===3){
+    const em=pfv("pfEmail");const okE=pfErr("email",/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)?"":"Please enter a valid email so people can reach you.");
+    const ph=pfv("pfPhone");const dg=ph.replace(/\D/g,"");const okP=pfErr("phone",!ph||(dg.length>=7&&dg.length<=15)?"":"That phone number doesn’t look right.");
+    if(!okE)$("#pfEmail").focus();else if(!okP)$("#pfPhone").focus();return okE&&okP;
+  }
+  return true;
+}
+async function pfPhoto(file){
+  pfErr("photo","");
+  if(!file)return;
+  if(!/^image\//.test(file.type)||file.size>15*1024*1024){pfErr("photo","Please choose an image under 15 MB.");return}
+  try{
+    let bmp;
+    try{bmp=await createImageBitmap(file,{imageOrientation:"from-image"})}catch(_){bmp=await new Promise((res,rej)=>{const i=new Image();i.onload=()=>res(i);i.onerror=rej;i.src=URL.createObjectURL(file)})}
+    const w=bmp.width,hh=bmp.height,s=Math.min(w,hh),S=520;
+    const c=document.createElement("canvas");c.width=c.height=S;
+    c.getContext("2d").drawImage(bmp,(w-s)/2,(hh-s)/2,s,s,0,0,S,S);
+    pf.photo=c.toDataURL("image/jpeg",.85);
+    const ph=$("#pfPh");ph.textContent="";ph.style.backgroundImage=`url(${pf.photo})`;
+  }catch(_){pfErr("photo","We couldn’t read that image. Please try another one.")}
+}
+function pfData(){
+  const ph=pfv("pfPhone"),digits=ph.replace(/\D/g,"");
+  return {name:pfv("pfName"),title:pfv("pfTitle2"),skills:pfSkills(),story:$("#pfStory").value.replace(/<[^>]*>/g,"").replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g," ").trim().slice(0,900),email:pfv("pfEmail"),phone:ph?ph.replace(/[^\d+\-\s()]/g,""):"",tel:ph?(ph.trim().startsWith("+")?"+":"")+digits:"",wa:digits.length>=7?digits:"",photo:pf.photo};
+}
+function buildPage(d,opts){opts=opts||{};
+  const ini=d.name.split(/\s+/).map(w=>w[0]||"").slice(0,2).join("").toUpperCase();
+  const photo=d.photo?`<img class="ph" src="${d.photo}" alt="Photo of ${esc(d.name)}">`:`<div class="ph ini" aria-hidden="true">${esc(ini)}</div>`;
+  const chips=d.skills.map(s=>`<li>${esc(s)}</li>`).join("");
+  const bio=d.story.split(/\n{2,}/).filter(p=>p.trim()).map(p=>`<p>${esc(p.trim()).replace(/\n/g,"<br>")}</p>`).join("");
+  const subj=encodeURIComponent("Hello "+d.name.split(" ")[0]+" — I found your portfolio");
+  const btns=[`<a class="btn primary" href="mailto:${esc(d.email)}?subject=${subj}">✉ Email me</a>`];
+  if(d.wa)btns.push(`<a class="btn" href="https://wa.me/${esc(d.wa)}" target="_blank" rel="noopener">💬 WhatsApp me</a>`);
+  if(d.tel)btns.push(`<a class="btn" href="tel:${esc(d.tel)}">📞 Call me</a>`);
+  const desc=esc((d.title+". "+d.story).slice(0,155));
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${opts.robots?'<meta name="robots" content="noindex,nofollow">':""}
+<title>${esc(d.name)} — ${esc(d.title)}</title><meta name="description" content="${desc}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{background:#fdf8f1}body{margin:0;background:transparent;color:#4a3a52;font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.7;min-height:100vh}
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#fdf8f1}.orbs i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.65}
+.orbs i:nth-child(1){width:440px;height:440px;left:-130px;top:-80px;background:#f3c9d3}.orbs i:nth-child(2){width:480px;height:480px;right:-180px;top:35%;background:#d9c8ee}.orbs i:nth-child(3){width:400px;height:400px;left:15%;bottom:-150px;background:#f1e0b8;opacity:.5}
+.wrap{width:min(880px,100% - 2.5rem);margin-inline:auto}
+header{padding:3.5rem 0 1.5rem;text-align:center}
+header .wrap,section .wrap{background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.8);box-shadow:0 12px 36px rgba(91,61,120,.12),inset 0 1px 0 rgba(255,255,255,.85);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border-radius:30px;padding:2.2rem 1.6rem}
+.ph{width:168px;height:168px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.9);box-shadow:0 0 0 2px #d9bd82,0 14px 34px rgba(91,61,120,.18);margin:0 auto 1.4rem;display:block}
+.ini{display:grid;place-items:center;background:linear-gradient(135deg,#f8e6e8,#efe8f5);color:#7d5a9a;font:600 3.2rem "DM Sans",system-ui,sans-serif}
+h1,h2{font-family:"DM Sans",system-ui,sans-serif;color:#3b2644;line-height:1.1;margin:0 0 .4em}h1{font-size:clamp(2.4rem,8vw,3.8rem)}h2{font-size:clamp(1.8rem,5vw,2.4rem)}
+.role{font-family:"DM Sans",system-ui,sans-serif;font-style:italic;font-weight:600;font-size:clamp(1.3rem,4vw,1.8rem);color:#a85d73;margin:0 0 1.4rem}
+.rule{width:64px;height:1px;background:#b8934a;margin:0 auto 1.6rem;border:0}
+section{padding:1rem 0}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.6rem;border-radius:999px;border:1.5px solid #7d5a9a;color:#5b3d78;font-weight:700;text-decoration:none;min-height:48px;background:rgba(255,255,255,.7)}
+.btn.primary{background:linear-gradient(135deg,#8a67a8,#5b3d78);color:#fff;border-color:#b8934a;box-shadow:0 10px 24px rgba(91,61,120,.3),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn:focus-visible{outline:3px solid #7d5a9a;outline-offset:3px}
+.skills{list-style:none;padding:0;margin:1rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
+.skills li{background:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.9);border-radius:999px;padding:.55rem 1.1rem;font-weight:500;color:#3b2644;box-shadow:0 4px 12px rgba(91,61,120,.08)}
+.contact{text-align:center}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin:1.4rem 0}
+footer{text-align:center;font-size:.85rem;color:#6e5d77;padding:1.6rem 1rem}
+footer a{color:#5b3d78}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){header .wrap,section .wrap{background:rgba(255,255,255,.93)}}
+@media print{.orbs{display:none}header .wrap,section .wrap{box-shadow:none;background:#fff}.btn{border:1px solid #999;box-shadow:none}}
+</style></head><body><div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+<header><div class="wrap">${photo}<h1>${esc(d.name)}</h1><p class="role">${esc(d.title)}</p><hr class="rule"><a class="btn primary" href="#contact">Contact me</a></div></header>
+<main>
+<section><div class="wrap"><h2>About me</h2>${bio}</div></section>
+<section><div class="wrap"><h2>What I can do</h2><ul class="skills">${chips}</ul></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>Let’s connect</h2><p>I’d love to hear from you. Get in touch and let’s talk.</p><div class="cta">${btns.join("")}</div></div></section>
+</main>
+<footer>Created with HER Brandon · Opportunity. Friendship. Belonging.${opts.report?` · <a href="mailto:${esc(opts.report)}?subject=${encodeURIComponent("Report a portfolio page")}">Report this page</a>`:""}</footer>
+</body></html>`;
+}
+document.addEventListener("click",e=>{
+  if(e.target.closest("[data-pf-open]")){pfOpened=Date.now();pfd.showModal();$("#pfWizard").hidden=false;$("#pfResult").hidden=true;pfShow(pf.step>3?0:pf.step)}
+});
+
+$$("#pfForm input,#pfForm textarea").forEach(f=>f.addEventListener("input",()=>{const m=f.id.replace(/^pf/,"").toLowerCase();["name","title2","skills","story","email","phone"].forEach(k=>{if(m===k){pfErr(k==="title2"?"title":k,"")}})}));
+
+/* ---------- publish to a hosted link ---------- */
+const PF_KEY="hb_pf_live";
+const pfSaved=()=>{try{return JSON.parse(localStorage.getItem(PF_KEY)||"null")}catch(_){return null}};
+const pfSave=v=>{try{v?localStorage.setItem(PF_KEY,JSON.stringify(v)):localStorage.removeItem(PF_KEY)}catch(_){}};
+const pfLinkFor=slug=>location.origin+"/"+slug;
+function pfSlugGuess(n){return (String(n||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40))||"your-name"}
+function pfRenderPub(){
+  const s=pfSaved();
+  $("#pfPub").hidden=!!s&&false;
+  const live=!!s;
+  $("#pfLive").hidden=!live;
+  $("#pfPublish").textContent=live?"🔄 Update my published page":"🌐 Publish my page";
+  $("#pfUrl").textContent=live?"Will update "+pfLinkFor(s.slug):"Your link will look like "+location.host+"/"+pfSlugGuess(pf.name);
+  if(live){
+    const l=pfLinkFor(s.slug);const a=$("#pfLink");a.href=l;a.textContent=l;
+    $("#pfCode").textContent=s.token;
+    $("#pfWa").href="https://wa.me/?text="+encodeURIComponent("Here’s my portfolio page: "+l);
+  }
+}
+async function pfPost(body){
+  const r=await fetch("/api/portfolio",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  let j={};try{j=await r.json()}catch(_){}
+  if(!r.ok||!j.ok){const e=new Error(j.error||"failed");e.code=j.error;throw e}
+  return j;
+}
+const pfMsg={consent_required:"Please tick the box to confirm you’re happy to publish.",slow_down:"Too many attempts — please wait a few minutes and try again.",full:"We’ve reached our pilot limit for published pages. Please contact us.",bad_code:"That edit code doesn’t match this page.",email:"Please check your email address.",phone:"Please check your phone number.",photo:"Please try a different photo.",missing:"Please complete all your answers first."};
+$("#pfConsent").addEventListener("change",()=>{$("#pfPublish").disabled=!$("#pfConsent").checked;$("#pfPubErr").textContent=""});
+$("#pfPublish").onclick=async()=>{
+  const btn=$("#pfPublish"),err=$("#pfPubErr");err.textContent="";
+  if(!$("#pfConsent").checked){err.textContent=pfMsg.consent_required;return}
+  btn.disabled=true;const old=btn.textContent;btn.textContent="Publishing…";
+  const s=pfSaved();const d=pfData();
+  try{
+    const j=await pfPost({action:"publish",consent:true,hp:"",elapsed:Date.now()-pfOpened,slug:s?s.slug:undefined,token:s?s.token:undefined,data:{name:d.name,title:d.title,skills:d.skills,story:d.story,email:d.email,phone:d.phone,photo:d.photo}});
+    pfSave({slug:j.slug,token:j.token||(s&&s.token)});
+    pfRenderPub();
+  }catch(e){
+    err.textContent=pfMsg[e.code]||"We couldn’t publish just now. Please try again in a moment.";
+  }finally{btn.disabled=!$("#pfConsent").checked;if(btn.textContent==="Publishing…")btn.textContent=old}
+};
+$("#pfCopy").onclick=async()=>{const l=$("#pfLink").textContent;try{await navigator.clipboard.writeText(l);$("#pfCopy").textContent="Copied ✓"}catch(_){$("#pfCopy").textContent="Select the link above"}setTimeout(()=>$("#pfCopy").textContent="Copy link",2500)};
+$("#pfCopyCode").onclick=async()=>{try{await navigator.clipboard.writeText($("#pfCode").textContent);$("#pfCopyCode").textContent="Copied ✓"}catch(_){}setTimeout(()=>$("#pfCopyCode").textContent="Copy code",2500)};
+$("#pfUnpub").onclick=async()=>{
+  const s=pfSaved();if(!s)return;
+  if(!confirm("Unpublish your page? Your link will stop working straight away."))return;
+  try{await pfPost({action:"unpublish",slug:s.slug,token:s.token});pfSave(null);$("#pfConsent").checked=false;$("#pfPublish").disabled=true;pfRenderPub();$("#pfLiveErr").textContent=""}
+  catch(e){$("#pfLiveErr").textContent=pfMsg[e.code]||"We couldn’t unpublish just now. Please try again."}
+};
+let pfOpened=Date.now();
+$("#pfClose").onclick=()=>pfd.close();
+pfd.addEventListener("click",e=>{if(e.target===pfd)pfd.close()});
+$("#pfFile").addEventListener("change",e=>pfPhoto(e.target.files[0]));
+$("#pfBack").onclick=()=>pfShow(pf.step-1);
+$("#pfNext").onclick=()=>{
+  if(!pfValidate(pf.step))return;
+  if(pf.step<3){pfShow(pf.step+1);return}
+  const d=pfData();pf.name=d.name;pf.html=buildPage(d);
+  $("#pfFrame").srcdoc=pf.html;$("#pfWizard").hidden=true;$("#pfResult").hidden=false;pfRenderPub();pfd.scrollTop=0;
+};
+$("#pfForm").addEventListener("submit",e=>{e.preventDefault();$("#pfNext").click()});
+$("#pfEdit").onclick=()=>{$("#pfResult").hidden=true;$("#pfWizard").hidden=false;pfShow(0)};
+$("#pfDownload").onclick=()=>{
+  const slug=(pf.name||"portfolio").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"portfolio";
+  const url=URL.createObjectURL(new Blob([pf.html],{type:"text/html"}));
+  const a=document.createElement("a");a.href=url;a.download=slug+"-portfolio.html";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),4000);
+};
+$("#pfPrint").onclick=()=>{const w=$("#pfFrame").contentWindow;if(w){w.focus();w.print()}};
+
+})();
+</script>
+</body>
+</html>
